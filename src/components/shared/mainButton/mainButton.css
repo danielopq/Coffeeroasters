@@ -1,0 +1,15 @@
+.mainButton {
+    width: 217px;
+    height: 56px;
+    border: none;
+    color: var(--lightCream);
+}
+
+.enable{
+    background-color: var(--darkCyan);
+    cursor: pointer;
+}
+
+.disable{
+    background-color: var(--grey);
+}
