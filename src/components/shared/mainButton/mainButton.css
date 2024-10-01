@@ -1,8 +1,10 @@
 .mainButton {
     width: 217px;
     height: 56px;
-    border: none;
     color: var(--lightCream);
+    font: 900 18px/25px 'Fraunces-Black';
+    border-radius: 6px;
+    border: none;
 }
 
 .enable{
