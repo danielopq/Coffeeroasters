@@ -1,0 +1,84 @@
+#homeCollection{
+    height: 525px;
+    margin-top: 136px;
+}
+#homeOurCollection {
+    width: 1111px;
+    height: 196px;
+    font: 900 150px/240px 'Fraunces-Black';
+    text-align: center;
+    color: var(--grey);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#homeCoffeVarieties {
+    width: 1111px;
+    height: 399px;
+    position: absolute;
+    margin-top: -70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#homeCoffeePictures {
+    width: inherit;
+    height: 193px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coffeePacketPic {
+    width: 255px;
+    height: inherit;
+    background-position: 90% 100%;
+    background-size: 230px;
+    background-repeat: no-repeat;
+}
+
+#granExpresoPic {
+    background-image: url('./img/image-gran-espresso.png');
+}
+
+#planaltoPic {
+    background-image: url('./img/image-planalto.png');
+}
+
+#picolloPic {
+    background-image: url('./img/image-piccollo.png');
+}
+
+#danchePic {
+    background-image: url('./img/image-danche.png');
+}
+
+#homeCoffeFeatures {
+    width: inherit;
+    height: 134px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--darkGrey);
+}
+
+.homeCoffeVariety {
+    width: 255px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homeCoffeeName {
+    width: inherit;
+    height: 32px;
+    font: 900 24px/32px 'Fraunces-Black';
+}
+
+.homeDescription{
+    width: inherit;
+    height: 78px;
+}
