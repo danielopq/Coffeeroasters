@@ -1,6 +1,21 @@
 :root{
     --mainBackGround-color: #FEFCF7;
     --darkGrey: #2C343E;
+    --grey: #83888F;
+}
+
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url('../src/assets/fonts/Barlow-Regular.woff')format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Barlow-Bold';
+    src: url('../src/assets/fonts/Barlow-Bold.woff')format('woff');
+    font-style: bold;
+    font-weight: 700;
 }
 
 *{

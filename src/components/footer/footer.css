@@ -13,18 +13,26 @@ footer > div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 
 #footerLinks{
     width: 622px;
     height: 26px;
-    border: solid 1px red;
+    color: grey;
+    justify-content: flex-end;
+    background: url('./img/logo-footer.svg') left/236px no-repeat;
+    font: 700 12px/26px 'Barlow-Bold';
+    cursor: pointer;
+}
+
+#footerLinks div{
+    margin-left: 32px;
 }
 
 #footerSocialMedia{
     width: 120px;
     height: 24px;
+    justify-content: space-between;
 }
 
 .socialMediaIcon{
