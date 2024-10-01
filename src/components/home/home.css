@@ -22,6 +22,12 @@
 #homeHowItWorks {
     width: 1045px;
     height: 565px;
-    margin-top: 200px;
+    margin: 200px 0px 0px 85px;
+    align-self: flex-start;
     border: solid 1px red
+}
+
+#home > button{
+    align-self: flex-start;
+    margin: 64px 0px 200px 85px;
 }
