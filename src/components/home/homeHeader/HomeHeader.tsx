@@ -1,4 +1,5 @@
 import './homeHeader.css';
+import MainButton from '../../shared/mainButton/MainButton';
 /**
  * Renders the header for the home page.
  * @returns {JSX.Element} - Header of the home page.
@@ -12,6 +13,7 @@ const HomeHeader:React.FC = () => {
                 best roasters delivered directly to your door,
                 at your schedule.
             </p>
+            <MainButton enable={true} value='Create your plan' />
         </header>
     )
 }
