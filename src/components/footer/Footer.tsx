@@ -4,7 +4,11 @@ const Footer = () => {
     return (
         <footer>
             <div id="footerLinks"></div>
-            <div id="footerSocialMedia"></div>
+            <div id="footerSocialMedia">
+                <div id="facebook" className='socialMediaIcon'></div>
+                <div id="twitter" className='socialMediaIcon'></div>
+                <div id="instagram" className='socialMediaIcon'></div>
+            </div>
         </footer>
     )
 }

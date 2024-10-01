@@ -9,6 +9,13 @@ footer {
     justify-content: space-between;
 }
 
+footer > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #footerLinks{
     width: 622px;
     height: 26px;
@@ -18,6 +25,25 @@ footer {
 #footerSocialMedia{
     width: 120px;
     height: 24px;
-    border: solid 1px red;
 }
 
+.socialMediaIcon{
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    cursor: pointer;
+}
+
+#facebook{
+    background-image: url(./img/icon-facebook.svg);
+}
+
+#twitter{
+    background-image: url(./img/icon-twitter.svg);
+}
+
+#instagram{
+    background-image: url(./img/icon-instagram.svg);
+}
