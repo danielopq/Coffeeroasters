@@ -1,5 +1,5 @@
 import './coffeeRoastersApp.css'
-import NavBar from './components/navBar/NavBar'
+import NavBar from './components/shared/navBar/NavBar'
 import Home from './components/home/Home'
 
 function CoffeeRoastersApp() {

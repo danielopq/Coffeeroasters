@@ -1,5 +1,5 @@
 import './home.css';
-import Footer from '../footer/Footer';
+import Footer from '../shared/footer/Footer';
 import HomeHeader from './homeHeader/HomeHeader';
 const Home: React.FC = () => {
     return (
