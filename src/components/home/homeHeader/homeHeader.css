@@ -1,0 +1,23 @@
+#homeHeader {
+    width: 1280px;
+    height: 600px;
+    border-radius: 8px;
+    background: url('../img/desktop/image-hero-coffeepress.jpg') center/1280px no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 117px 0px 0px 85px;
+}
+
+#homeHeader h1 {
+    width: 493px;
+    height: 145px;
+}
+
+#homeHeader p {
+    width: 445px;
+    height: 78px;
+    color: var(--lightCream);
+    margin-top: 32px;
+}
