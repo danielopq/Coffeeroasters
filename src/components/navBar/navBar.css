@@ -1,0 +1,9 @@
+#mainNavBar{
+    width: 1280px;
+    height: 26px;
+    position: absolute;
+    margin: 43px 0px 0px 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: solid 1px red;
+}

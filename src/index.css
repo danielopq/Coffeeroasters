@@ -1,1 +1,35 @@
+:root{
+    --mainBackGround-color: #FEFCF7;
+}
 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    width: 1440px;
+    height: auto;
+    background-color: var(--mainBackGround-color);
+    padding: 113px 80px 88px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: solid 1px red;
+}
+
+nav{
+    padding: 0px;
+    margin: auto;
+}
