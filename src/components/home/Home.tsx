@@ -1,5 +1,5 @@
 import './home.css';
-
+import Footer from '../footer/Footer';
 const Home: React.FC = () => {
     return (
         <main id="home">
@@ -9,6 +9,7 @@ const Home: React.FC = () => {
             <div id="homeReasons"></div>
             <div id="homeHowItWorks"></div>
             <button id="homeBt"></button>
+            <Footer/>
         </main>
     )
 }
