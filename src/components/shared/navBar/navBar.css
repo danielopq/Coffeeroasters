@@ -5,5 +5,19 @@
     margin: 43px 0px 0px 0px;
     left: 50%;
     transform: translate(-50%, 0%);
-    border: solid 1px red;
+    background: url('./img/logo.svg') left/236px no-repeat;
 }
+
+#mainNavBarLinks{
+    width: 283px;
+    height: 26px;
+    float: right;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font: 700 12px/26px 'Barlow-Bold';
+    letter-spacing: 0.92px;
+    cursor: pointer;
+}
+
