@@ -1,0 +1,18 @@
+#aboutUsHeader{
+    width: 1280px;
+    height: 450px;
+    padding: 137px 0px 0px 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    background: url('./img/whitecup-desktop.jpg') center/1280px no-repeat;
+    color: var(--lightCream);
+}
+
+#aboutUsHeader p{
+    width: 445px;
+    height: 104px;
+    margin-top: 24px;
+}
+
