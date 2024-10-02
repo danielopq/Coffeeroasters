@@ -4,6 +4,7 @@ import HomeHeader from './homeHeader/HomeHeader';
 import MainButton from '../shared/mainButton/MainButton';
 import HomeCollection from './homeColletion/HomeCollection';
 import HomeWhyChooseUs from './homeWhyChooseUs/HomeWhyChooseUs';
+import PlanSteps from '../shared/planSteps/PlanSteps';
 
 const Home: React.FC = () => {
     return (
@@ -12,7 +13,7 @@ const Home: React.FC = () => {
             <HomeCollection/>
             <HomeWhyChooseUs/>
             <h4>How it works?</h4>
-            <div className='planSteps'></div>
+            <PlanSteps/>
             <MainButton enable={true} value={'Create your plan'}/>
             <Footer />
         </main>
