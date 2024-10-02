@@ -1,6 +1,68 @@
 #homeWhyChooseUs {
     width: 1280px;
     height: 577px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
     margin-top: 200px;
-    border: solid 1px red
+    border-radius: 10px;
+    color: var(--lightCream);
+    padding-top: 100px;
+    background-color: var(--darkGrey);
 }
+
+#homeWhyChooseUs p {
+    width: 528px;
+    height: 80px;
+    margin-top: 32px;
+}
+
+#homeReasons {
+    width: 1110px;
+    height: 382px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -231px;
+}
+
+.reason {
+    width: 350px;
+    height: inherit;
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--darkCyan);
+    color: var(--lightCream);
+    border-radius: 8px;
+}
+
+.reason p{
+    width: 255px;
+    height: 78px;
+    margin-top: 24px;
+}
+
+.reasonPic{
+    width: 72px;
+    height: 72px;
+    background-position: center;
+    background-size: 72px;
+    background-repeat: no-repeat;
+    margin-bottom: 56px;
+}
+
+#coffeeBean-icon{
+    background-image: url('./img/icon-coffee-bean.svg');
+}
+#gift-icon{
+    background-image: url('./img/icon-gift.svg');
+}
+#truck-icon{
+    background-image: url('./img/icon-truck.svg');
+}
+

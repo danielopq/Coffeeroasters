@@ -1,7 +1,7 @@
 :root{
     --lightCream: #FEFCF7; /*rgb(254,252,247) - hsl(43, 78%, 98%)*/
     --grey: #83888F; /*rgb(131,136,143) - hsl(215,5%,54%)*/
-    --darkGrey: #333D4B; /*rgb(51,61,75) - hsl(215,19%,25%)*/
+    --darkGrey: #2C343E; /*rgb(51,61,75) - hsl(215,19%,25%)*/
     --darkCyan: #0E8784; /*rgb(14,135,132) - hsl(179,81%,29%)*/
     --paleOrange: #FDD6BA; /*rgb(253,214,186) - hsl(25,94%,86%)*/
 }
@@ -51,7 +51,6 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border: solid 1px red;
 }
 
 nav{
@@ -59,11 +58,26 @@ nav{
     margin: auto;
 }
 
-h1{
+h1,h2,h3,h4{
     padding:0px;
     margin: 0px;
+}
+
+h1{
     color: var(--lightCream);
     font: 900 72px/72px 'Fraunces-Black';
+}
+
+h2{
+    font: 40px/48px 'Fraunces-Black';
+}
+
+h3{
+    font: 32px/36px 'Fraunces-Black';
+}
+
+h4{
+    font: 24px/32px 'Fraunces-Black';
 }
 
 .mainText{
