@@ -1,0 +1,29 @@
+header{
+    width: 1280px;
+    height: 450px;
+    border: solid 1px red;
+}
+
+#aboutUsOurCommitment{
+    width: 1110px;
+    height: 520px;
+    margin-top: 168px;
+    border: solid 1px red;
+}
+
+#aboutUsQuality{
+    width: 1280px;
+    height: 562px;
+    margin-top: 168px;
+    border: solid 1px red;
+}
+
+#aboutUsHeadQuarters{
+    width: 1045px;
+    height: 366px;
+    margin: 168px 0px;
+    border: solid 1px red;
+}
+
+
+
