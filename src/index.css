@@ -80,6 +80,11 @@ h4{
     font: 24px/32px 'Fraunces-Black';
 }
 
+p{
+    padding:0px;
+    margin: 0px; 
+}
+
 .mainText{
     font: 400 16px/26px 'Barlow-Regular'; 
 }

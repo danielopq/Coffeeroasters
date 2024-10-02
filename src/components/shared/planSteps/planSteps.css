@@ -1,5 +1,67 @@
 .planSteps {
     width: 1045px;
     height: 453px;
-    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#planStepsGraphic{
+    width: inherit;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.stepsCircle{
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    border: solid 1px var(--darkCyan);
+}
+
+.stepsLine{
+    width: 349px;
+    height: 2px;
+    background-color: var(--paleOrange);
+}
+
+#planStepsIndications{
+    width: inherit;
+    height: 355px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.step{
+    width: 285px;
+    height: inherit;
+}
+
+.stepNumber{
+    font: 900 72px/72px 'Fraunces-Black';
+    color: var(--paleOrange);
+}
+
+.step h3{
+    width: 255px;
+    margin: 38px 0px 42px 0px;
+}
+
+.dark h3{
+    color: var(--darkGrey);
+}
+.dark p[class='mainText']{
+    color: var(--darkGrey);
+}
+
+.light h3{
+    color: var(--lightCream);
+}
+
+.light p[class='mainText']{
+    color: var(--lightCream);
 }
