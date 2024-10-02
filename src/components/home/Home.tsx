@@ -11,7 +11,8 @@ const Home: React.FC = () => {
             <HomeHeader/>
             <HomeCollection/>
             <HomeWhyChooseUs/>
-            <div id="homeHowItWorks"></div>
+            <h4>How it works?</h4>
+            <div className='planSteps'></div>
             <MainButton enable={true} value={'Create your plan'}/>
             <Footer />
         </main>

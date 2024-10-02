@@ -33,7 +33,6 @@ const HomeWhyChooseUs = () => {
                 </div>
             </div>
         </>
-
     )
 }
 export default HomeWhyChooseUs;
