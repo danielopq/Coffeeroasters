@@ -1,0 +1,27 @@
+#aboutUsCommitment{
+    width: 1110px;
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 168px;
+    color: var(--darkGrey);
+}
+
+#commitmentPic{
+    width: 445px;
+    height: inherit;
+    border-radius: 8px;
+    background: url('./img/desktop-commitment.jpg') center/445px;
+}
+
+#commitmentText{
+    width: 538px;
+    height: 340px;
+}
+
+#commitmentText p{
+    margin-top: 32px;
+}
+
