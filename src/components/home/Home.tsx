@@ -3,12 +3,14 @@ import Footer from '../shared/footer/Footer';
 import HomeHeader from './homeHeader/HomeHeader';
 import MainButton from '../shared/mainButton/MainButton';
 import HomeCollection from './homeColletion/HomeCollection';
+import HomeWhyChooseUs from './homeWhyChooseUs/HomeWhyChooseUs';
+
 const Home: React.FC = () => {
     return (
         <main id="home">
             <HomeHeader/>
             <HomeCollection/>
-            <div id="homeWhyChooseUs"></div>
+            <HomeWhyChooseUs/>
             <div id="homeReasons"></div>
             <div id="homeHowItWorks"></div>
             <MainButton enable={true} value={'Create your plan'}/>
