@@ -1,5 +1,13 @@
 #subscribeHeader{
     width: 1280px;
     height: 450px;
-    border: solid 1px red;
+    border-radius: 10px;
+    padding: 134px 0px 0px 85px;
+    background: url('./img/desktop-blackcup.jpg') center/1280px no-repeat;
+}
+
+#subscribeHeader p{
+    width: 445px;
+    margin-top: 32px;
+    color: var(--lightCream);
 }
