@@ -2,7 +2,8 @@ import './aboutUs.css';
 import Footer from '../shared/footer/Footer';
 import AboutUsHeader from './aboutUsHeader/AboutUsHeader';
 import AboutUsCommitment from './aboutUsCommitment/AboutUsCommitment';
-import AboutUsQuality from './aboutUsQuality/aboutUsQuality';
+import AboutUsQuality from './aboutUsQuality/AboutUsQuality';
+import AboutUsHeadQuarters from './aboutUsHeadQuarters/AboutUsHeadQuarters';
 
 const AboutUs = () =>{
     return(
@@ -10,7 +11,7 @@ const AboutUs = () =>{
             <AboutUsHeader/>
             <AboutUsCommitment/>
             <AboutUsQuality/>
-            <div id="aboutUsHeadQuarters"></div>
+            <AboutUsHeadQuarters/>
             <Footer/>
         </main>
     )
