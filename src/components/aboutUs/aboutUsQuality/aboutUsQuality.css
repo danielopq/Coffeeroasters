@@ -2,5 +2,33 @@
     width: 1280px;
     height: 562px;
     margin-top: 168px;
-    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: var(--lightCream);
 }
+
+#qualityPic{
+    width: 445px;
+    height: 474px;
+    border-radius: 8px;
+    margin-right: 85px;
+    position: absolute;
+    background: url('./img/desktop-quality.jpg') center/445px;
+}
+
+#qualityInfo{
+    width: inherit;
+    height: 474px;
+    border-radius: 8px;
+    margin-top: 88px;
+    padding: 88px 0px 0px 85px;
+    background-color: var(--darkGrey);
+}
+
+#aboutUsQuality p{
+    width: 540px;
+    margin-top: 32px;
+}
+
