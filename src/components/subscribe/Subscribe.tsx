@@ -1,4 +1,3 @@
-import './subscribe.css';
 import SubscribeHeader from './subscribeHeader/SubscribeHeader';
 import SubscribeSteps from './subscribeSteps/SubscribeSteps';
 import SubscribePlanMaker from './subscribePlanMaker/SubscribePlanMaker';
