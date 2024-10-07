@@ -1,4 +1,5 @@
 import './subscribePlanMaker.css';
+import PlanOption from './planOption/PlanOption';
 
 import MainButton from '../../shared/mainButton/MainButton';
 
@@ -8,46 +9,11 @@ const SubscribePlanMaker: React.FC = () => {
             <div id="planMakerContent">
                 <div id="planIndex"></div>
                 <div id="planOptions">
-                    <div className='option'>
-                        <div className='optionTitle'></div>
-                        <div className='optionChoices'>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                        </div>
-                    </div>
-                    <div className='option'>
-                        <div className='optionTitle'></div>
-                        <div className='optionChoices'>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                        </div>
-                    </div>
-                    <div className='option'>
-                        <div className='optionTitle'></div>
-                        <div className='optionChoices'>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                        </div>
-                    </div>
-                    <div className='option'>
-                        <div className='optionTitle'></div>
-                        <div className='optionChoices'>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                        </div>
-                    </div>
-                    <div className='option'>
-                        <div className='optionTitle'></div>
-                        <div className='optionChoices'>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                            <div className='choice'></div>
-                        </div>
-                    </div>
+                    <PlanOption/>
+                    <PlanOption/>
+                    <PlanOption/>
+                    <PlanOption/>
+                    <PlanOption/>
                 </div>
             </div>
             <div id="planSummary"></div>

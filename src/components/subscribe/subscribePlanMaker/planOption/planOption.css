@@ -1,0 +1,31 @@
+.option{
+    width: inherit;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 88px;
+    border: solid 1px green;
+}
+
+.optionTitle{
+    width: inherit;
+    height: 48px;
+    border: solid 1px red;
+}
+
+.optionChoices{
+    width: inherit;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1px red;
+}
+
+.choice{
+    width: 228px;
+    height: inherit;
+    border-radius: 8px;
+    border: solid 1px red;
+}
