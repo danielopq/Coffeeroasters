@@ -9,11 +9,11 @@ const SubscribePlanMaker: React.FC = () => {
             <div id="planMakerContent">
                 <div id="planIndex"></div>
                 <div id="planOptions">
-                    <PlanOption/>
-                    <PlanOption/>
-                    <PlanOption/>
-                    <PlanOption/>
-                    <PlanOption/>
+                    <PlanOption deployed={false}/>
+                    <PlanOption deployed={false}/>
+                    <PlanOption deployed={false}/>
+                    <PlanOption deployed={false}/>
+                    <PlanOption deployed={false}/>
                 </div>
             </div>
             <div id="planSummary"></div>

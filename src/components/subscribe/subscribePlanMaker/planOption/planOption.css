@@ -11,6 +11,11 @@
 .optionTitle{
     width: inherit;
     height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--grey);
     border: solid 1px red;
 }
 
@@ -27,5 +32,33 @@
     width: 228px;
     height: inherit;
     border-radius: 8px;
+    padding: 32px 28px 0px 28px;
+    display: flex;
+    flex-direction: column;
     border: solid 1px red;
 }
+
+.choice h4{
+    margin-bottom: 24px;
+}
+
+.arrow{
+    width: 18px;
+    height: 12px;
+    background-position: center;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.arrowUp{
+    background-image: url('./img/icon-arrow-up.svg') ;
+}
+
+.arrowDown{
+    background-image: url('./img/icon-arrow-down.svg') ;
+}
+
+
