@@ -7,7 +7,6 @@ interface PlanOptionProps {
 
 const PlanOption: React.FC<PlanOptionProps> = ({ deployed }) => {
 
-
     const refArrow = useRef<HTMLButtonElement>(null);
 
     useEffect(() => {

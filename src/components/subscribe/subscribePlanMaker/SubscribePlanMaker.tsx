@@ -1,6 +1,5 @@
 import './subscribePlanMaker.css';
 import PlanOption from './planOption/PlanOption';
-
 import MainButton from '../../shared/mainButton/MainButton';
 
 const SubscribePlanMaker: React.FC = () => {
