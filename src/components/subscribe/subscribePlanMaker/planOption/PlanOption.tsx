@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './planOption.css';
+import PlanChoice from './planChoice/PlanChoice';
 
 interface Choice {
     title: string;
@@ -36,18 +37,9 @@ const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
                 <button ref={refArrow} className='arrow arrowDown'></button>
             </div>
             <div className='optionChoices'>
-                <div className='choice'>
-                    <h4>{choice01.title}</h4>
-                    <p className='mainText'>{choice01.description}</p>
-                </div>
-                <div className='choice'>
-                    <h4>{choice02.title}</h4>
-                    <p className='mainText'>{choice02.description}</p>
-                </div>
-                <div className='choice'>
-                    <h4>{choice03.title}</h4>
-                    <p className='mainText'>{choice03.description}</p>
-                </div>
+                <PlanChoice choiceProperties={choice01}/>
+                <PlanChoice choiceProperties={choice02}/>
+                <PlanChoice choiceProperties={choice03}/>
             </div>
         </div>
     )

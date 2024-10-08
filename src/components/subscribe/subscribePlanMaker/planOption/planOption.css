@@ -28,24 +28,6 @@
     border: solid 1px red;
 }
 
-.choice{
-    width: 228px;
-    height: inherit;
-    border-radius: 8px;
-    padding: 32px 0px 0px 28px;
-    display: flex;
-    flex-direction: column;
-    border: solid 1px red;
-}
-
-.choice h4{
-    margin-bottom: 24px;
-}
-
-.choice p{
-   width: 172px;
-}
-
 .arrow{
     width: 18px;
     height: 12px;
