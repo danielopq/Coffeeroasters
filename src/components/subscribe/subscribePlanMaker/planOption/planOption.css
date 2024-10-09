@@ -1,11 +1,10 @@
 .option{
     width: inherit;
-    height: 354px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 88px;
-    border: solid 1px green;
 }
 
 .optionTitle{
@@ -16,16 +15,22 @@
     align-items: center;
     justify-content: space-between;
     color: var(--grey);
-    border: solid 1px red;
 }
 
 .optionChoices{
     width: inherit;
     height: 250px;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 1px red;
+    margin-top: 56px;
+}
+
+.optionChoicesExtended{
+    display: flex;
+}
+
+.optionChoicesCollapsed{
+    display: none;
 }
 
 .arrow{
