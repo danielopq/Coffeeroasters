@@ -55,9 +55,9 @@ const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
                 <button ref={refArrow} className='arrow arrowDown' onClick={displayChoices}></button>
             </div>
             <div ref={refOptionChoices} className='optionChoices'>
-                <PlanChoice choiceProperties={choice01} selected={false} />
-                <PlanChoice choiceProperties={choice02} selected={false} />
-                <PlanChoice choiceProperties={choice03} selected={false} />
+                <PlanChoice id="choice01" choiceProperties={choice01} selected={false} />
+                <PlanChoice id="choice02"  choiceProperties={choice02} selected={false} />
+                <PlanChoice id="choice03"  choiceProperties={choice03} selected={false} />
             </div>
         </div>
     )

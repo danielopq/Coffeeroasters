@@ -7,11 +7,12 @@ interface Choice {
 }
 
 interface ChoiceProps{
+    id:string;
     choiceProperties:Choice;
     selected:boolean;
 }
 
-const PlanChoice: React.FC<ChoiceProps> = ({choiceProperties,selected=false}) => {
+const PlanChoice: React.FC<ChoiceProps> = ({id,choiceProperties,selected=false}) => {
     const refChoice = useRef<HTMLDivElement>(null);
     useEffect(()=>{
         if(refChoice.current){
