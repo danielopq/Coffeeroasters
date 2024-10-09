@@ -19,27 +19,27 @@ interface PlanOptionProps {
     option: Option;
 }
 
+/**
+ * Component that renders a single product option for the consumer to select within a plan.
+ * @param param0 - Contains the `deployed` state and the product `option` to be displayed.
+ * @returns - The rendered product option.
+ */
 const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
 
     const { optionHeader, choice01, choice02, choice03 } = option;
     const refArrow = useRef<HTMLButtonElement>(null);
     const refOptionChoices = useRef<HTMLDivElement>(null);
-    const [choicesVisibility, SetChoicesVisibility] = useState<boolean>(!deployed);
+    const [choicesVisibility, SetChoicesVisibility] = useState<boolean>(deployed);
 
-    // Sets the arrow to point up (choices expanded) or down (choices collapsed).
     useEffect(() => {
-        if (refArrow.current) {
-            deployed ? refArrow.current.className = 'arrow arrowDown' : refArrow.current.className = 'arrow arrowUp'
-        }
-        if (refOptionChoices.current) {
-            deployed ? refOptionChoices.current.className = 'optionChoices optionChoicesExtended' : refOptionChoices.current.className = 'optionChoices optionChoicesCollapsed'
-        }
-        console.log(choicesVisibility);
+        displayChoices();
     }, [])
 
-    const handleClick = () => {
+    /**
+     * Sets the arrow to point up (choices expanded) or down (choices collapsed), and shows or hides the choices accordingly.
+     */
+    const displayChoices = () => {
         SetChoicesVisibility(!choicesVisibility);
-        console.log(choicesVisibility);
         if (refArrow.current) {
             choicesVisibility ? refArrow.current.className = 'arrow arrowDown' : refArrow.current.className = 'arrow arrowUp'
         }
@@ -48,12 +48,11 @@ const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
         }
     }
 
-
     return (
         <div className='option'>
             <div className='optionTitle'>
                 <h2>{optionHeader}</h2>
-                <button ref={refArrow} className='arrow arrowDown' onClick={handleClick}></button>
+                <button ref={refArrow} className='arrow arrowDown' onClick={displayChoices}></button>
             </div>
             <div ref={refOptionChoices} className='optionChoices'>
                 <PlanChoice choiceProperties={choice01} />
