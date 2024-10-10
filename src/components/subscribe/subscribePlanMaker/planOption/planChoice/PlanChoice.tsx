@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import './planChoice.css';
 
 interface Choice {
@@ -7,24 +6,14 @@ interface Choice {
 }
 
 interface ChoiceProps{
-    id:string;
     choiceProperties:Choice;
     selected:boolean;
+    onClick: () => void;
 }
 
-const PlanChoice: React.FC<ChoiceProps> = ({id,choiceProperties,selected=false}) => {
-    const refChoice = useRef<HTMLDivElement>(null);
-    useEffect(()=>{
-        if(refChoice.current){
-            selected ? refChoice.current.className = 'choice selectedChoice' : refChoice.current.className = 'choice unSelectedChoice'; 
-        }
-    },[selected]);
-
-    const handleClick = () =>{
-    }
-
+const PlanChoice: React.FC<ChoiceProps> = ({choiceProperties,selected=false,onClick}) => {
     return (
-        <div ref={refChoice} className='choice unSelectedChoice'>
+        <div className={selected ? 'choice selectedChoice' : 'choice unSelectedChoice'} onClick={onClick}>
             <h4>{choiceProperties.title}</h4>
             <p className='mainText'>{choiceProperties.description}</p>
         </div>

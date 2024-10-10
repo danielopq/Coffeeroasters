@@ -27,6 +27,8 @@ interface PlanOptionProps {
 const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
 
     const { optionHeader, choice01, choice02, choice03 } = option;
+    const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
+    const [selectedDescription,setSelectedDescription] = useState<string | null >(null);
     const refArrow = useRef<HTMLButtonElement>(null);
     const refOptionChoices = useRef<HTMLDivElement>(null);
     const [choicesVisibility, SetChoicesVisibility] = useState<boolean>(deployed);
@@ -48,6 +50,11 @@ const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
         }
     }
 
+    const handleClick = (id: 'choice01' | 'choice02' | 'choice03') => {
+        setSelectedChoice(id);
+        setSelectedDescription(option[id].description);
+    };
+
     return (
         <div className='option'>
             <div className='optionTitle'>
@@ -55,9 +62,9 @@ const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
                 <button ref={refArrow} className='arrow arrowDown' onClick={displayChoices}></button>
             </div>
             <div ref={refOptionChoices} className='optionChoices'>
-                <PlanChoice id="choice01" choiceProperties={choice01} selected={false} />
-                <PlanChoice id="choice02"  choiceProperties={choice02} selected={false} />
-                <PlanChoice id="choice03"  choiceProperties={choice03} selected={false} />
+                <PlanChoice choiceProperties={choice01} selected={selectedChoice === 'choice01' } onClick={() => handleClick('choice01')} />
+                <PlanChoice choiceProperties={choice02} selected={selectedChoice === 'choice02'} onClick={() => handleClick('choice02')}/>
+                <PlanChoice choiceProperties={choice03} selected={selectedChoice === 'choice03'} onClick={() => handleClick('choice03')}/>
             </div>
         </div>
     )
