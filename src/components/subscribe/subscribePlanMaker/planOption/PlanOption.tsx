@@ -28,7 +28,7 @@ const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
 
     const { optionHeader, choice01, choice02, choice03 } = option;
     const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
-    const [selectedDescription,setSelectedDescription] = useState<string | null >(null);
+    const [selectedOption,setSelectedOption] = useState<string | null >(null);
     const refArrow = useRef<HTMLButtonElement>(null);
     const refOptionChoices = useRef<HTMLDivElement>(null);
     const [choicesVisibility, SetChoicesVisibility] = useState<boolean>(deployed);
@@ -52,7 +52,7 @@ const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
 
     const handleClick = (id: 'choice01' | 'choice02' | 'choice03') => {
         setSelectedChoice(id);
-        setSelectedDescription(option[id].description);
+        setSelectedOption(option[id].title);
     };
 
     return (
