@@ -53,3 +53,7 @@
     font: 900 24px/40px 'Fraunces-Black';
     color: white;
 }
+
+.planChoice{
+    color:var(--darkCyan);
+}

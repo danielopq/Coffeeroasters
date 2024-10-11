@@ -11,11 +11,11 @@ interface planResume{
 const SubscribePlanMaker: React.FC = () => {
     const {option01,option02,option03,option04,option05} = OptionsData;
 
-    const [plan,setPlan] = useState<planResume>({drinkStyle:'',coffeeType:'',weight:'',grindingType:'',delivery:''});
-    
+    const [plan,setPlan] = useState<planResume>({drinkStyle:'_____',coffeeType:'_____',weight:'_____',grindingType:'_____',delivery:'_____'});
+    const {drinkStyle,coffeeType,weight,grindingType,delivery} = plan;
+
     const getChoice = (optionID:string, selectedChoice:string)=>{
         setPlan({...plan,[optionID]:selectedChoice});
-        console.table(plan);
     }
 
     return (
@@ -34,7 +34,11 @@ const SubscribePlanMaker: React.FC = () => {
                 <div id="planSummary-content">
                     <p className='mainText'>ORDER SUMMARY</p>
                     <p id="planSummary-resumeText">
-                    “I drink my coffee using _____, with a _____ type of bean. _____ , sent to me _____.”
+                    “I drink my coffee {drinkStyle == 'Capsules' ? 'using' : 'as'} <span className='planChoice'>{drinkStyle}</span>, 
+                    with a <span className='planChoice'>{coffeeType}</span> type of bean.
+                    <span className='planChoice'> {weight}</span>
+                    {drinkStyle === 'Capsules' ? '' : (<> ground ala <span className='planChoice'>{grindingType}</span></>)}
+                    , sent to me <span className='planChoice'>{delivery}</span>.”
                     </p>
                 </div>
             </div>

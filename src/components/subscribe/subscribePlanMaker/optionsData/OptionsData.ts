@@ -18,7 +18,7 @@ const OptionsData: OptionsList = {
     'option01': {
         optionHeader: 'How do you drink your coffee?',
         choice01: {
-            title: 'Capsule',
+            title: 'Capsules',
             description: 'Compatible with Nespresso systems and similar brewers',
         },
         choice02: {
@@ -48,15 +48,15 @@ const OptionsData: OptionsList = {
     'option03': {
         optionHeader: 'How much would you like?',
         choice01: {
-            title: '250 gr.',
+            title: '250 gr. ',
             description: 'Perfect for the solo drinker. Yields about 12 delicious cups.',
         },
         choice02: {
-            title: '500 gr.',
+            title: '500 gr. ',
             description: 'Perfect option for a couple. Yields about 40 delectable cups.',
         },
         choice03: {
-            title: '1000 gr.',
+            title: '1000 gr. ',
             description: 'Perfect for offices and events. Yields about 90 delightful cups.',
         },
     },
