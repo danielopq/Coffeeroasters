@@ -1,0 +1,28 @@
+#planIndex {
+    width: 255px;
+    height: 505px;
+    font: 900 24px/32px 'Fraunces-Black';
+    display: flex;
+    flex-direction: column;
+    margin-top: -24px;
+}
+
+.indexOption{
+    width: inherit;
+    height: 80px;
+    padding: 24px 0px;
+    border-bottom: solid 1px rgba(131,136,143,0.25);
+    color: var(--darkGrey);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.indexUnselected{
+    opacity: 0.4;
+}
+
+.indexOptionNumber{
+    margin-right: 25px;
+}
