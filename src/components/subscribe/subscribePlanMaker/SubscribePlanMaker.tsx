@@ -2,6 +2,7 @@ import './subscribePlanMaker.css';
 import OptionsData from './optionsData/OptionsData';
 import PlanIndex from './planIndex/PlanIndex';
 import PlanOption from './planOption/PlanOption';
+import PlanSummary from './planSummary/PlanSummary';
 import MainButton from '../../shared/mainButton/MainButton';
 import { useState } from 'react';
 
@@ -30,18 +31,7 @@ const SubscribePlanMaker: React.FC = () => {
                     <PlanOption optionID={'deliveries'} deployed={false} option={option05} getChoice={getChoice} />
                 </div>
             </div>
-            <div id="planSummary">
-                <div id="planSummary-content">
-                    <p className='mainText'>ORDER SUMMARY</p>
-                    <p id="planSummary-resumeText">
-                        “I drink my coffee {preferences == 'Capsules' ? 'using' : 'as'} <span className='planChoice'>{preferences}</span>,
-                        with a <span className='planChoice'>{beanType}</span> type of bean.
-                        <span className='planChoice'> {quantity}</span>
-                        {preferences === 'Capsules' ? '' : (<> ground ala <span className='planChoice'>{grindOption}</span></>)}
-                        , sent to me <span className='planChoice'>{deliveries}</span>.”
-                    </p>
-                </div>
-            </div>
+            <PlanSummary preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries}/>
             <MainButton enable={false} value='Create my plan!' />
         </div>
     )

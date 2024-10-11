@@ -1,0 +1,26 @@
+#planSummary{
+    width: 730px;
+    height: 208px;
+    margin-bottom: 40px;
+    padding: 47px 64px;
+    background-color: var(--darkGrey);
+}
+
+#planSummary-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#planSummary-content p[class='mainText']{
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 9px;
+}
+
+#planSummary-resumeText{
+    font: 900 24px/40px 'Fraunces-Black';
+    color: white;
+}
+
+.planChoice{
+    color:var(--darkCyan);
+}
