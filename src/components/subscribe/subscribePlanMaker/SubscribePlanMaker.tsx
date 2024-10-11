@@ -1,6 +1,6 @@
 import './subscribePlanMaker.css';
 import OptionsData from './optionsData/OptionsData';
-import PlanIndex from '../planIndex/PlanIndex';
+import PlanIndex from './planIndex/PlanIndex';
 import PlanOption from './planOption/PlanOption';
 import MainButton from '../../shared/mainButton/MainButton';
 import { useState } from 'react';
