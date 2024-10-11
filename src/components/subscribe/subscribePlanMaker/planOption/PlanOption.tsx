@@ -15,8 +15,10 @@ interface Option {
 }
 
 interface PlanOptionProps {
-    deployed: boolean;
+    optionID: string;
     option: Option;
+    deployed: boolean;
+    getChoice: (option:string,choice:string)=>void;
 }
 
 /**
@@ -24,11 +26,10 @@ interface PlanOptionProps {
  * @param param0 - Contains the `deployed` state and the product `option` to be displayed.
  * @returns - The rendered product option.
  */
-const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
+const PlanOption: React.FC<PlanOptionProps> = ({optionID, option, deployed, getChoice}) => {
 
     const { optionHeader, choice01, choice02, choice03 } = option;
     const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
-    const [selectedOption,setSelectedOption] = useState<string | null >(null);
     const refArrow = useRef<HTMLButtonElement>(null);
     const refOptionChoices = useRef<HTMLDivElement>(null);
     const [choicesVisibility, SetChoicesVisibility] = useState<boolean>(deployed);
@@ -52,14 +53,14 @@ const PlanOption: React.FC<PlanOptionProps> = ({ deployed, option }) => {
 
     const handleClick = (id: 'choice01' | 'choice02' | 'choice03') => {
         setSelectedChoice(id);
-        setSelectedOption(option[id].title);
+        getChoice(optionID,option[id].title);
     };
 
     return (
         <div className='option'>
-            <div className='optionTitle'>
+            <div className='optionTitle' onClick={displayChoices}>
                 <h2>{optionHeader}</h2>
-                <button ref={refArrow} className='arrow arrowDown' onClick={displayChoices}></button>
+                <button ref={refArrow} className='arrow arrowDown'></button>
             </div>
             <div ref={refOptionChoices} className='optionChoices'>
                 <PlanChoice choiceProperties={choice01} selected={selectedChoice === 'choice01' } onClick={() => handleClick('choice01')} />

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './planChoice.css';
 
 interface Choice {
