@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './mainButton.css';
 
 interface MainButtonProps{
-    enable:boolean;
+    enable?:boolean;
     value:string;
 }
 
