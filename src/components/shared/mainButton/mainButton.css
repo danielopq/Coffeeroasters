@@ -7,11 +7,11 @@
     border: none;
 }
 
-.enable{
+.enabled{
     background-color: var(--darkCyan);
     cursor: pointer;
 }
 
-.disable{
+.disabled{
     background-color: var(--grey);
 }

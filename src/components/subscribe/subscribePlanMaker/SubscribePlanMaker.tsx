@@ -14,7 +14,8 @@ interface planResume {
 const SubscribePlanMaker: React.FC = () => {
     const { option01, option02, option03, option04, option05 } = OptionsData;
     const [plan, setPlan] = useState<planResume>({ preferences: '_____', beanType: '_____', quantity: '_____', grindOption: '_____', deliveries: '_____' });
-    const [enableButton, setEnableButton] = useState<boolean>(false);
+    const [disabledButton, setDisabledButton] = useState<boolean>(true);
+    const [showDialog, setShowDialog] = useState<boolean>(false);
     const { preferences, beanType, quantity, grindOption, deliveries } = plan;
     const [grindOptionBlocked, setGrindOptionBlocked] = useState<boolean>(false);
 
@@ -26,12 +27,13 @@ const SubscribePlanMaker: React.FC = () => {
         }
         const planLength = Object.keys(plan).length;
         if (((planLength - countSelectedOptions) == 0 && !grindOptionBlocked) || ((planLength - countSelectedOptions) == 1 && grindOptionBlocked)) {
-            setEnableButton(true);
+            setDisabledButton(false);
         } else {
-            setEnableButton(false);
+            setDisabledButton(true);
         }
 
     }, [plan]);
+
     const getChoice = (optionID: string, selectedChoice: string) => {
         setPlan((prevPlan) => {
             const updatedPlan = { ...prevPlan, [optionID]: selectedChoice };
@@ -45,6 +47,9 @@ const SubscribePlanMaker: React.FC = () => {
         });
     };
 
+    const handleClick = ()=>{
+        setShowDialog(true);
+    }
     return (
         <>
             <div id="subscribePlanMaker">
@@ -59,9 +64,9 @@ const SubscribePlanMaker: React.FC = () => {
                     </div>
                 </div>
                 <PlanSummary preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} />
-                <MainButton enable={enableButton} value='Create my plan!' />
+                <MainButton disabled={disabledButton} value='Create my plan!' handleClick={handleClick}/>
             </div>
-            <ConfirmationDialog preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} />
+            <ConfirmationDialog preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} showDialog={showDialog} />
         </>
 
     )

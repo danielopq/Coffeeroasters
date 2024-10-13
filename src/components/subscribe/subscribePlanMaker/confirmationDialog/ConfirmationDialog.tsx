@@ -8,17 +8,17 @@ interface PlanSummaryProps {
     quantity: string;
     grindOption: string;
     deliveries: string;
-    showConfirmationDialog:boolean;
+    showDialog:boolean;
 }
 
-const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries,showConfirmationDialog=false }) => {
+const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries,showDialog=false }) => {
 
     useEffect(()=>{
 
-    },[showConfirmationDialog]);
+    },[showDialog]);
 
     return (
-        <div id="confirmationDialog" className={showConfirmationDialog ? 'showDialog' : 'hideDialog'}>
+        <div id="confirmationDialog" className={showDialog ? 'showDialog' : 'hideDialog'}>
             <div id="confirmationDialog-content">
                 <div id="confirmationDialog-header">
                     <h2>Order Summary</h2>
