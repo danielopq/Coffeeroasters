@@ -4,7 +4,7 @@ import PlanIndex from './planIndex/PlanIndex';
 import PlanOption from './planOption/PlanOption';
 import PlanSummary from './planSummary/PlanSummary';
 import MainButton from '../../shared/mainButton/MainButton';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface planResume {
     [option: string]: string;
@@ -13,9 +13,24 @@ interface planResume {
 const SubscribePlanMaker: React.FC = () => {
     const { option01, option02, option03, option04, option05 } = OptionsData;
     const [plan, setPlan] = useState<planResume>({ preferences: '_____', beanType: '_____', quantity: '_____', grindOption: '_____', deliveries: '_____' });
+    const [enableButton,setEnableButton] = useState<boolean>(false);
     const { preferences, beanType, quantity, grindOption, deliveries } = plan;
     const [grindOptionBlocked,setGrindOptionBlocked] = useState<boolean>(false);
 
+
+    useEffect(()=>{
+        let countSelectedOptions: number = 0;
+        for(let i in plan){
+            plan[i] !== '_____' && countSelectedOptions++;
+        }
+        const planLength = Object.keys(plan).length;
+        if (((planLength - countSelectedOptions) == 0 && !grindOptionBlocked) || ((planLength - countSelectedOptions) == 1 && grindOptionBlocked)){
+            setEnableButton(true);
+        }else{
+            setEnableButton(false);
+        }
+
+    },[plan]);
     const getChoice = (optionID: string, selectedChoice: string) => {
         setPlan((prevPlan) => {
             const updatedPlan = { ...prevPlan, [optionID]: selectedChoice };
@@ -42,7 +57,7 @@ const SubscribePlanMaker: React.FC = () => {
                 </div>
             </div>
             <PlanSummary preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} />
-            <MainButton enable={false} value='Create my plan!' />
+            <MainButton enable={enableButton} value='Create my plan!' />
         </div>
     )
 }
