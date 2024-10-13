@@ -44,10 +44,12 @@ const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blo
         displayChoices();
     }, []);
 
+    //Determines if the option button should be blocked based on the "blocked" prop state.
     useEffect(() => {
         if (refOptionButton.current) {
             refOptionButton.current.className = blocked ? 'buttonBlocked' : 'arrowDown';
         }
+        !blocked && setSelectedChoice(null);
     }, [blocked]);
 
     /**
