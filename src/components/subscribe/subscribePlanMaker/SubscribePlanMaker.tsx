@@ -27,7 +27,7 @@ const SubscribePlanMaker: React.FC = () => {
                     <PlanOption optionID={'preferences'} deployed={true} option={option01} getChoice={getChoice} />
                     <PlanOption optionID={'beanType'} deployed={false} option={option02} getChoice={getChoice} />
                     <PlanOption optionID={'quantity'} deployed={false} option={option03} getChoice={getChoice} />
-                    <PlanOption optionID={'grindOption'} deployed={false} option={option04} getChoice={getChoice} />
+                    <PlanOption optionID={'grindOption'} deployed={false} option={option04} blocked={true} getChoice={getChoice} />
                     <PlanOption optionID={'deliveries'} deployed={false} option={option05} getChoice={getChoice} />
                 </div>
             </div>
