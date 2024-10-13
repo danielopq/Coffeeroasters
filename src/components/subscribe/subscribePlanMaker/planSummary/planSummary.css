@@ -1,8 +1,9 @@
 #planSummary{
     width: 730px;
-    height: 208px;
+    height: auto;
     margin-bottom: 40px;
     padding: 47px 64px;
+    border-radius: 10px;
     background-color: var(--darkGrey);
 }
 
