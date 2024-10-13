@@ -1,5 +1,6 @@
 import './confirmationDialog.css';
 import MainButton from '../../../shared/mainButton/MainButton';
+import { useEffect } from 'react';
 
 interface PlanSummaryProps {
     preferences: string;
@@ -7,11 +8,17 @@ interface PlanSummaryProps {
     quantity: string;
     grindOption: string;
     deliveries: string;
+    showConfirmationDialog:boolean;
 }
 
-const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries }) => {
+const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries,showConfirmationDialog=false }) => {
+
+    useEffect(()=>{
+
+    },[showConfirmationDialog]);
+
     return (
-        <div id="confirmationDialog">
+        <div id="confirmationDialog" className={showConfirmationDialog ? 'showDialog' : 'hideDialog'}>
             <div id="confirmationDialog-content">
                 <div id="confirmationDialog-header">
                     <h2>Order Summary</h2>
