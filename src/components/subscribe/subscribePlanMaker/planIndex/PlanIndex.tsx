@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import './planIndex.css';
 
 interface PlanIndexProps{
@@ -6,9 +7,20 @@ interface PlanIndexProps{
     quantity:string;
     grindOption:string;
     deliveries:string;
+    blockGrindOption:boolean;
 }
 
-const PlanIndex:React.FC<PlanIndexProps> = ({preferences,beanType,quantity,grindOption,deliveries})=>{
+const PlanIndex:React.FC<PlanIndexProps> = ({preferences,beanType,quantity,grindOption,deliveries,blockGrindOption=false})=>{
+
+
+    const refGrindOption = useRef<HTMLDivElement>(null);
+
+    useEffect(()=>{
+        if(refGrindOption.current){
+            refGrindOption.current.className
+        }   
+    },[blockGrindOption])
+
     return(
         <div id="planIndex">
         <div className={preferences === '_____' ? 'indexOption indexUnselected' : 'indexOption' }>
@@ -23,7 +35,7 @@ const PlanIndex:React.FC<PlanIndexProps> = ({preferences,beanType,quantity,grind
             <p className='indexOptionNumber'>03</p>
             <p>Quantity</p>
         </div>
-        <div className={grindOption === '_____' ? 'indexOption indexUnselected' : 'indexOption' }>
+        <div ref={refGrindOption} className={ blockGrindOption ? 'indexOption indexBlocked' : (grindOption === '_____' ? 'indexOption indexUnselected' : 'indexOption')  }>
             <p className='indexOptionNumber'>04</p>
             <p>Grind Option</p>
         </div>

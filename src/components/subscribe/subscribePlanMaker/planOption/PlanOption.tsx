@@ -41,16 +41,29 @@ const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blo
     const [choicesVisibility, SetChoicesVisibility] = useState<boolean>(deployed);
 
     useEffect(() => {
-        displayChoices();
+        if (refOptionChoices.current) {
+            refOptionChoices.current.className = deployed ? 'optionChoices optionChoicesExtended' : 'optionChoices optionChoicesCollapsed';
+        }
     }, []);
 
     //Determines if the option button should be blocked based on the "blocked" prop state.
     useEffect(() => {
-        if (refOptionButton.current) {
-            refOptionButton.current.className = blocked ? 'buttonBlocked' : 'arrowDown';
+        SetChoicesVisibility(!blocked);
+        if (blocked) {
+            setSelectedChoice(null); // Reset selected choice if blocked
+            if (refOptionChoices.current) {
+                refOptionChoices.current.className = 'optionChoices optionChoicesCollapsed'; // Collapse choices
+            }
+            if (refOptionButton.current) {
+                refOptionButton.current.className = 'buttonBlocked'; // Update button class
+            }
+        } else {
+            if (refOptionButton.current) {
+                refOptionButton.current.className = 'arrowDown'; // Update button class
+            }
         }
-        !blocked && setSelectedChoice(null);
     }, [blocked]);
+
 
     /**
      * Toggles the visibility of the choices and updates the button and choices styles.
@@ -66,11 +79,6 @@ const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blo
                 refOptionChoices.current.className = choicesVisibility
                     ? 'optionChoices optionChoicesExtended'
                     : 'optionChoices optionChoicesCollapsed';
-            }
-        } else {
-            // Ensure the choices are collapsed when the option is blocked
-            if (refOptionChoices.current) {
-                refOptionChoices.current.className = 'optionChoices optionChoicesCollapsed';
             }
         }
     };

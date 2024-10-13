@@ -23,6 +23,11 @@
     opacity: 0.4;
 }
 
+.indexBlocked{
+    opacity: 0.1;
+}
+
 .indexOptionNumber{
     margin-right: 25px;
 }
+
