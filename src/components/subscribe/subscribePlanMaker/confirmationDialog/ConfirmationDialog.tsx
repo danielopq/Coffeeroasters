@@ -9,12 +9,17 @@ interface PlanSummaryProps {
     grindOption: string;
     deliveries: string;
     showDialog:boolean;
+    setDialogVisibility:()=>void;
 }
 
-const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries,showDialog=false }) => {
+const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries,showDialog=false,setDialogVisibility }) => {
 
     useEffect(()=>{
-
+        if(showDialog){
+            document.body.style.overflow = 'hidden';
+        }else{
+            document.body.style.overflow = 'auto';
+        }
     },[showDialog]);
 
     return (
@@ -36,7 +41,7 @@ const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType,
                 </p>
                 <div id="confirmationDialog-buttonArea">
                     <p id="confirmationDialog-fee">$14.00/ mo</p>
-                    <MainButton value='Checkout'/>
+                    <MainButton value='Checkout' handleClick={setDialogVisibility}/>
                 </div>
             </div>
         </div>

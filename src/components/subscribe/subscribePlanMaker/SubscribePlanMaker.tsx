@@ -47,9 +47,10 @@ const SubscribePlanMaker: React.FC = () => {
         });
     };
 
-    const handleClick = ()=>{
-        setShowDialog(true);
+    const setDialogVisibility = ()=>{
+        setShowDialog(!showDialog);
     }
+    
     return (
         <>
             <div id="subscribePlanMaker">
@@ -64,9 +65,9 @@ const SubscribePlanMaker: React.FC = () => {
                     </div>
                 </div>
                 <PlanSummary preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} />
-                <MainButton disabled={disabledButton} value='Create my plan!' handleClick={handleClick}/>
+                <MainButton disabled={disabledButton} value='Create my plan!' handleClick={setDialogVisibility}/>
             </div>
-            <ConfirmationDialog preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} showDialog={showDialog} />
+            <ConfirmationDialog preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} showDialog={showDialog} setDialogVisibility={setDialogVisibility} />
         </>
 
     )
