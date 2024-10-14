@@ -29,7 +29,7 @@ const Home: React.FC = () => {
             <HomeCollection/>
             <HomeWhyChooseUs/>
             <h4>How it works?</h4>
-            <PlanSteps fontColor='light'/>
+            <PlanSteps fontColor='dark'/>
             <MainButton value={'Create your plan'} handleClick={()=> handleClick('/subscribe')}/>
             <Footer />
         </main>
