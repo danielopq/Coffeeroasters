@@ -1,7 +1,8 @@
-#homeCollection{
+#homeCollection {
     height: 525px;
     margin-top: 136px;
 }
+
 #homeOurCollection {
     width: 1111px;
     height: 196px;
@@ -78,7 +79,95 @@
     font: 900 24px/32px 'Fraunces-Black';
 }
 
-.homeDescription{
+.homeDescription {
     width: inherit;
     height: 78px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #homeCollection {
+        width: 689px;
+        height: 927px;
+    }
+
+    #homeOurCollection {
+        width: 689px;
+        height: 118px;
+        font: 900 96px/103px 'Fraunces-Black';        
+    }
+
+    #homeCoffeVarieties {
+        width: 573px;
+        height: 868px;
+        margin-top: -70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    #homeCoffeePictures {
+        width: 193px;
+        height: 868px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: solid 1px red;
+    }
+
+    .coffeePacketPic {
+        width: 255px;
+        height: inherit;
+        background-position: 90% 100%;
+        background-size: 230px;
+        background-repeat: no-repeat;
+    }
+
+    #granExpresoPic {
+        background-image: url('./img/image-gran-espresso.png');
+    }
+
+    #planaltoPic {
+        background-image: url('./img/image-planalto.png');
+    }
+
+    #picolloPic {
+        background-image: url('./img/image-piccollo.png');
+    }
+
+    #danchePic {
+        background-image: url('./img/image-danche.png');
+    }
+
+    #homeCoffeFeatures {
+        width: inherit;
+        height: 134px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        color: var(--darkGrey);
+    }
+
+    .homeCoffeVariety {
+        width: 255px;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .homeCoffeeName {
+        width: inherit;
+        height: 32px;
+        font: 900 24px/32px 'Fraunces-Black';
+    }
+
+    .homeDescription {
+        width: inherit;
+        height: 78px;
+    }
+
 }
