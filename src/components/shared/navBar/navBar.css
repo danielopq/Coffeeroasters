@@ -12,12 +12,17 @@
     width: 283px;
     height: 26px;
     float: right;
-    color: grey;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#mainNavBarLinks button{
+    background-color: transparent;
+    border: none;
     font: 700 12px/26px 'Barlow-Bold';
     letter-spacing: 0.92px;
+    color: var(--grey);
     cursor: pointer;
 }
 
