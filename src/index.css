@@ -88,3 +88,15 @@ p{
 .mainText{
     font: 400 16px/26px 'Barlow-Regular'; 
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1{
+        font: 900 48px/48px 'Fraunces-Black';
+    }
+
+    .mainText{
+        font: 400 15px/25px 'Barlow-Regular'; 
+    }
+}

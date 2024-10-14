@@ -2,7 +2,7 @@
     width: 1280px;
     height: 600px;
     border-radius: 10px;
-    background: url('../img/desktop/image-hero-coffeepress.jpg') center/1280px no-repeat;
+    background: url('./img/coffeepress-desktop.jpg') center/1280px no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,10 +18,36 @@
 #homeHeader p {
     width: 445px;
     height: 78px;
-    color: var(--lightCream);
+    color: rgba(254,252,247,0.8);
     margin-top: 32px;
 }
 
 #homeHeader button {
     margin-top: 56px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #homeHeader {
+        width: 689px;
+        height: 500px;
+        background: url('./img/coffeepress-tablet.jpg') center/689px no-repeat;
+        padding: 104px 0px 104px 58px;
+    }
+
+    #homeHeader h1 {
+        width: 329px;
+        height: 97px;
+    }
+
+    #homeHeader p {
+        width: 397px;
+        height: 75px;
+        margin-top: 24px;
+    }
+
+    #homeHeader button {
+        margin-top: 44px;
+    }
 }
