@@ -5,6 +5,7 @@ import PlanChoice from './planChoice/PlanChoice';
 interface Choice {
     title: string;
     description: string;
+    value:number;
 }
 
 interface Option {
@@ -19,7 +20,7 @@ interface PlanOptionProps {
     option: Option;
     deployed: boolean;
     blocked?: boolean;
-    getChoice: (option: string, choice: string) => void;
+    getChoice: (option: string, choice: string, value:number) => void;
 }
 
 /**
@@ -89,7 +90,7 @@ const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blo
      */
     const handleClick = (id: 'choice01' | 'choice02' | 'choice03') => {
         setSelectedChoice(id);
-        getChoice(optionID, option[id].title);
+        getChoice(optionID, option[id].title,option[id].value);
     };
 
     return (

@@ -11,14 +11,19 @@ interface planResume {
     [option: string]: string;
 }
 
+interface planPrices {
+    [option: string]: number;
+}
+
 const SubscribePlanMaker: React.FC = () => {
     const { option01, option02, option03, option04, option05 } = OptionsData;
     const [plan, setPlan] = useState<planResume>({ preferences: '_____', beanType: '_____', quantity: '_____', grindOption: '_____', deliveries: '_____' });
+    const { preferences, beanType, quantity, grindOption, deliveries } = plan;
+    const [planPrices, setPlanPrices] = useState<planPrices>({ preferences: 0, beanType: 0, quantity: 0, grindOption: 0, deliveries: 0 });
+    const [finalPrice, setFinalPrice] = useState<number>(0);
     const [disabledButton, setDisabledButton] = useState<boolean>(true);
     const [showDialog, setShowDialog] = useState<boolean>(false);
-    const { preferences, beanType, quantity, grindOption, deliveries } = plan;
     const [grindOptionBlocked, setGrindOptionBlocked] = useState<boolean>(false);
-
 
     useEffect(() => {
         let countSelectedOptions: number = 0;
@@ -31,10 +36,9 @@ const SubscribePlanMaker: React.FC = () => {
         } else {
             setDisabledButton(true);
         }
-
     }, [plan]);
 
-    const getChoice = (optionID: string, selectedChoice: string) => {
+    const getChoice = (optionID: string, selectedChoice: string, value: number) => {
         setPlan((prevPlan) => {
             const updatedPlan = { ...prevPlan, [optionID]: selectedChoice };
             if (updatedPlan['preferences'] === 'Capsules') {
@@ -45,12 +49,25 @@ const SubscribePlanMaker: React.FC = () => {
             }
             return updatedPlan;
         });
+
+        setPlanPrices((prevPlan) => {
+            const updatedPlan = { ...prevPlan, [optionID]: value };
+            return updatedPlan;
+        });
+
+        console.log(value);
     };
 
-    const setDialogVisibility = ()=>{
+    const displayDialog = () => {
+        let price = 0;
         setShowDialog(!showDialog);
+        for(let i in planPrices){
+            price += planPrices[i];
+        }
+        plan['preferences'] === 'Capsules' && (price -= planPrices['grindOption']);
+        setFinalPrice(price);
     }
-    
+
     return (
         <>
             <div id="subscribePlanMaker">
@@ -65,9 +82,9 @@ const SubscribePlanMaker: React.FC = () => {
                     </div>
                 </div>
                 <PlanSummary preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} />
-                <MainButton disabled={disabledButton} value='Create my plan!' handleClick={setDialogVisibility}/>
+                <MainButton disabled={disabledButton} value='Create my plan!' handleClick={displayDialog} />
             </div>
-            <ConfirmationDialog preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} showDialog={showDialog} setDialogVisibility={setDialogVisibility} />
+            <ConfirmationDialog preferences={preferences} beanType={beanType} quantity={quantity} grindOption={grindOption} deliveries={deliveries} showDialog={showDialog} finalPrice={finalPrice} displayDialog={displayDialog} />
         </>
 
     )

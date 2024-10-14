@@ -9,10 +9,11 @@ interface PlanSummaryProps {
     grindOption: string;
     deliveries: string;
     showDialog:boolean;
-    setDialogVisibility:()=>void;
+    finalPrice:number;
+    displayDialog:()=>void;
 }
 
-const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries,showDialog=false,setDialogVisibility }) => {
+const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries,showDialog=false,finalPrice,displayDialog }) => {
 
     useEffect(()=>{
         if(showDialog){
@@ -40,8 +41,8 @@ const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType,
                     Subscription discount codes can also be redeemed at the checkout.
                 </p>
                 <div id="confirmationDialog-buttonArea">
-                    <p id="confirmationDialog-fee">$14.00/ mo</p>
-                    <MainButton value='Checkout' handleClick={setDialogVisibility}/>
+                <p id="confirmationDialog-fee">${finalPrice.toFixed(2)}/sh.</p>
+                    <MainButton value='Checkout' handleClick={displayDialog}/>
                 </div>
             </div>
         </div>
