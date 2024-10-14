@@ -6,6 +6,10 @@ import HomeCollection from './homeColletion/HomeCollection';
 import HomeWhyChooseUs from './homeWhyChooseUs/HomeWhyChooseUs';
 import PlanSteps from '../shared/planSteps/PlanSteps';
 
+/**
+ * Renders the home page of the site.
+ * @returns {JSX.Element} The home page component.
+ */
 const Home: React.FC = () => {
     return (
         <main id="home">
