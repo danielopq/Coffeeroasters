@@ -5,7 +5,7 @@ import './footer.css';
  * Renders the footer of the website.
  * @returns {JSX.Element} The website footer component.
  */
-const Footer:React.FC = () => {
+const Footer: React.FC = () => {
     const navigate = useNavigate();
 
     /**
@@ -19,7 +19,7 @@ const Footer:React.FC = () => {
     return (
         <footer>
             <div id="footerLinks">
-            <button onClick={() => handleClick('/')}>HOME</button>
+                <button onClick={() => handleClick('/')}>HOME</button>
                 <button onClick={() => handleClick('/aboutus')}>ABOUT US</button>
                 <button onClick={() => handleClick('/subscribe')}>CREATE YOUR PLAN</button>
             </div>

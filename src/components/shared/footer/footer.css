@@ -66,3 +66,37 @@ footer>div {
 #instagram {
     background-image: url(./img/icon-instagram.svg);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        width: 100vw;
+        height: 270px;
+        padding: 54px 190px;
+        flex-direction: column;
+        justify-content: flex-start; 
+    }
+    
+    footer>div {
+        align-items: flex-end;
+    }
+    
+    #footerLinks {
+        width: 283px;
+        height: 73px;
+        background-position: top;
+        justify-content: space-between;
+    }
+    
+    #footerLinks button {
+        margin-left: 0px;
+        font: 700 12px/15px 'Barlow-Bold';
+        letter-spacing: 0.96px;
+    }
+
+    #footerSocialMedia {
+        margin-top: 65px;
+    }
+
+}
