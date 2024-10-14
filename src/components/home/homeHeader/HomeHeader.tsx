@@ -1,10 +1,18 @@
 import './homeHeader.css';
 import MainButton from '../../shared/mainButton/MainButton';
+
+
+interface HomeHeaderProps{
+    handleClick: ()=>void;
+}
+
 /**
- * Renders the header for the home page.
- * @returns {JSX.Element} - Header of the home page.
+ * Renders the header section of the home page.
+ * @param {Object} props - Component properties.
+ * @param {function} props.handleClick - Function to handle navigation or button click.
+ * @returns {JSX.Element} - The rendered header of the home page.
  */
-const HomeHeader:React.FC = () => {
+const HomeHeader:React.FC<HomeHeaderProps> = ({handleClick}) => {
     return (
         <header id="homeHeader">
             <h1>Great coffee made simple.</h1>
@@ -13,7 +21,7 @@ const HomeHeader:React.FC = () => {
                 best roasters delivered directly to your door,
                 at your schedule.
             </p>
-            <MainButton enable={true} value='Create your plan' />
+            <MainButton value='Create your plan' handleClick={handleClick} />
         </header>
     )
 }

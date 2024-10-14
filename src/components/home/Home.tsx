@@ -25,7 +25,7 @@ const Home: React.FC = () => {
 
     return (
         <main id="home">
-            <HomeHeader/>
+            <HomeHeader handleClick={()=> handleClick('/subscribe')}/>
             <HomeCollection/>
             <HomeWhyChooseUs/>
             <h4>How it works?</h4>
