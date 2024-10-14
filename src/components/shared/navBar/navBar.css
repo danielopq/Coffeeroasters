@@ -1,4 +1,4 @@
-#mainNavBar{
+#mainNavBar {
     width: 1280px;
     height: 26px;
     position: absolute;
@@ -8,7 +8,7 @@
     background: url('./img/logo.svg') left/236px no-repeat;
 }
 
-#mainNavBarLinks{
+#mainNavBarLinks {
     width: 283px;
     height: 26px;
     float: right;
@@ -17,7 +17,7 @@
     justify-content: space-between;
 }
 
-#mainNavBarLinks button{
+#mainNavBarLinks button {
     background-color: transparent;
     border: none;
     font: 700 12px/26px 'Barlow-Bold';
@@ -26,7 +26,16 @@
     cursor: pointer;
 }
 
-#mainNavBarLinks button:hover{
+#mainNavBarLinks button:hover {
     opacity: 0.4;
 }
 
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #mainNavBar {
+        width: 689px;
+        height: 26px;
+        margin: 40px 0px 0px 0px;
+    }
+}
