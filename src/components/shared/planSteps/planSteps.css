@@ -52,11 +52,11 @@
 }
 
 .light h3{
-    color: var(--lightCream);
+    color: var(--darkGrey);
 }
 
 .light p[class='mainText']{
-    color: var(--lightCream);
+    color: var(--darkGrey);
 }
 
 .dark h3{
