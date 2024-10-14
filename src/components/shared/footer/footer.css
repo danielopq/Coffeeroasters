@@ -9,34 +9,40 @@ footer {
     justify-content: space-between;
 }
 
-footer > div {
+footer>div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#footerLinks{
+#footerLinks {
     width: 622px;
     height: 26px;
-    color: grey;
     justify-content: flex-end;
     background: url('./img/logo-footer.svg') left/236px no-repeat;
+}
+
+#footerLinks button {
+    margin-left: 32px;
+    background-color: transparent;
+    border: none;
     font: 700 12px/26px 'Barlow-Bold';
     letter-spacing: 0.92px;
+    color: var(--grey);
     cursor: pointer;
 }
 
-#footerLinks div{
-    margin-left: 32px;
+#footerLinks button:hover {
+    opacity: 0.4;
 }
 
-#footerSocialMedia{
+#footerSocialMedia {
     width: 120px;
     height: 24px;
     justify-content: space-between;
 }
 
-.socialMediaIcon{
+.socialMediaIcon {
     width: 24px;
     height: 24px;
     background-position: center;
@@ -45,14 +51,18 @@ footer > div {
     cursor: pointer;
 }
 
-#facebook{
+.socialMediaIcon:hover {
+    opacity: 0.4;
+}
+
+#facebook {
     background-image: url(./img/icon-facebook.svg);
 }
 
-#twitter{
+#twitter {
     background-image: url(./img/icon-twitter.svg);
 }
 
-#instagram{
+#instagram {
     background-image: url(./img/icon-instagram.svg);
 }

@@ -1,12 +1,27 @@
+import { useNavigate } from 'react-router-dom';
 import './footer.css';
 
-const Footer = () => {
+/**
+ * Renders the footer of the website.
+ * @returns {JSX.Element} The website footer component.
+ */
+const Footer:React.FC = () => {
+    const navigate = useNavigate();
+
+    /**
+     * Navigates to the specified path.
+     * @param {string} route - The path to navigate to.
+     */
+    const handleClick = (route: string): void => {
+        navigate(route);
+    };
+
     return (
         <footer>
             <div id="footerLinks">
-                <div>HOME</div>
-                <div>ABOUT US</div>
-                <div>CREATE YOUR PLAN</div>
+            <button onClick={() => handleClick('/')}>HOME</button>
+                <button onClick={() => handleClick('/aboutus')}>ABOUT US</button>
+                <button onClick={() => handleClick('/subscribe')}>CREATE YOUR PLAN</button>
             </div>
             <div id="footerSocialMedia">
                 <div id="facebook" className='socialMediaIcon'></div>
