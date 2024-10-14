@@ -14,7 +14,7 @@ const Home: React.FC = () => {
             <HomeWhyChooseUs/>
             <h4>How it works?</h4>
             <PlanSteps fontColor='light'/>
-            <MainButton enable={true} value={'Create your plan'}/>
+            <MainButton value={'Create your plan'}/>
             <Footer />
         </main>
     )
