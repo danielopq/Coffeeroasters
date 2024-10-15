@@ -9,5 +9,20 @@
 #subscribeHeader p{
     width: 445px;
     margin-top: 32px;
-    color: var(--lightCream);
+    color: rgba(254,252,247,0.8);
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #subscribeHeader{
+        width: 689px;
+        height: 400px;
+        padding: 127px 0px 0px 58px;
+        background: url('./img/tablet-hero-blackcup.jpg') center/689px no-repeat;
+    }
+    
+    #subscribeHeader p{
+        width: 398px;
+    }
 }
