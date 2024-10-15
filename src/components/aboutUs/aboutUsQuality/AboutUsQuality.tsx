@@ -4,7 +4,7 @@ import './aboutUsQuality.css';
  * Component that renders the "Quality" section in the "About Us" page.
  * @returns {JSX.Element} - The "Quality" section of the "About Us" page.
  */
-const AboutUsQuality = () => {
+const AboutUsQuality:React.FC = () => {
     return (
         <div id="aboutUsQuality">
             <div id="qualityPic"></div>
