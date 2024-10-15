@@ -13,3 +13,20 @@
     align-self: flex-start;
     margin: 80px 0px 200px 85px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #home>h4 {
+        margin: 144px 0px 0px 0px;
+    }
+    
+    #home div[class='planSteps'] {
+        margin: 40px 0px 0px 0px;
+    }
+    
+    #home>button {
+        align-self: flex-start;
+        margin: 44px 0px 144px 0px;
+    }
+}

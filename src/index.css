@@ -92,6 +92,12 @@ p{
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    main{
+        width: 100vw;
+        height: auto;
+        padding: 113px 0px 72px 0px;
+    }
+
     h1{
         font: 900 48px/48px 'Fraunces-Black';
     }
