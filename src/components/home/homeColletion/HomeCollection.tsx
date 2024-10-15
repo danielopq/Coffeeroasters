@@ -11,9 +11,9 @@ const HomeCollection: React.FC = () => {
             <div id="homeCoffeVarieties">
                 <div id="homeCoffeePictures">
                     <div id="granExpresoPic" className='coffeePacketPic'></div>
-                    <div id="planaltoPic"  className='coffeePacketPic'></div>
-                    <div id="picolloPic"  className='coffeePacketPic'></div>
-                    <div id="danchePic"  className='coffeePacketPic'></div>
+                    <div id="planaltoPic" className='coffeePacketPic'></div>
+                    <div id="picolloPic" className='coffeePacketPic'></div>
+                    <div id="danchePic" className='coffeePacketPic'></div>
                 </div>
                 <div id="homeCoffeFeatures">
                     <div className='homeCoffeVariety'>

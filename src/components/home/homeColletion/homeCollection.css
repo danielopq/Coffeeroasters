@@ -101,73 +101,40 @@
     #homeCoffeVarieties {
         width: 573px;
         height: 868px;
-        margin-top: -70px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
+        margin: -70px 58px 0px 58px;
+        flex-direction: row;
     }
 
     #homeCoffeePictures {
-        width: 193px;
-        height: 868px;
-        display: flex;
+        width: 255px;
+        height: inherit;
         flex-direction: column;
-        justify-content: space-between;
-        border: solid 1px red;
     }
 
     .coffeePacketPic {
-        width: 255px;
-        height: inherit;
-        background-position: 90% 100%;
-        background-size: 230px;
-        background-repeat: no-repeat;
-    }
-
-    #granExpresoPic {
-        background-image: url('./img/image-gran-espresso.png');
-    }
-
-    #planaltoPic {
-        background-image: url('./img/image-planalto.png');
-    }
-
-    #picolloPic {
-        background-image: url('./img/image-piccollo.png');
-    }
-
-    #danchePic {
-        background-image: url('./img/image-danche.png');
+        height: 193px;
+        background-position: 76% 100%;
+        background-size: 226px;
     }
 
     #homeCoffeFeatures {
-        width: inherit;
-        height: 134px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        color: var(--darkGrey);
+        width: 282px;
+        height: inherit;
+        flex-direction: column;
+        text-align: left;
     }
 
     .homeCoffeVariety {
-        width: 255px;
-        height: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: inherit;
+        height: 193px;
+        justify-content: flex-start;
     }
 
     .homeCoffeeName {
-        width: inherit;
-        height: 32px;
-        font: 900 24px/32px 'Fraunces-Black';
+        margin-top: 30px;
     }
 
     .homeDescription {
-        width: inherit;
-        height: 78px;
+        margin-top: 24px;
     }
-
 }
