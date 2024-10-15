@@ -79,7 +79,7 @@ footer>div {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     footer {
-        width: 100vw;
+        width: 668px;
         height: 270px;
         padding: 54px 190px;
         flex-direction: column;
