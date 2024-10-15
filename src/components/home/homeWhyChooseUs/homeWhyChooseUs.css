@@ -41,28 +41,81 @@
     border-radius: 8px;
 }
 
-.reason p{
+.reason p {
     width: 255px;
     height: 78px;
     margin-top: 24px;
 }
 
-.reasonPic{
-    width: 72px;
-    height: 72px;
-    background-position: center;
+.reasonContent {
+    width: 255px;
+    height: 262px;
+    padding-top: 128px;
+    background-position: 50% 0%;
     background-size: 72px;
     background-repeat: no-repeat;
     margin-bottom: 56px;
 }
 
-#coffeeBean-icon{
+#coffeeBean-icon {
     background-image: url('./img/icon-coffee-bean.svg');
 }
-#gift-icon{
+
+#gift-icon {
     background-image: url('./img/icon-gift.svg');
 }
-#truck-icon{
+
+#truck-icon {
     background-image: url('./img/icon-truck.svg');
 }
 
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #homeWhyChooseUs {
+        width: 688px;
+        height: 573px;
+        margin-top: 144px;
+        border-radius: 10px;
+        padding-top: 56px;
+    }
+
+    #homeWhyChooseUs p {
+        width: 495px;
+        height: 77px;
+        margin-top: 24px;
+    }
+
+    #homeReasons {
+        width: 573px;
+        height: 588px;
+        flex-direction: column;
+        margin-top: -275px;
+        
+    }
+
+    .reason {
+        width: 573px;
+        height: 180px;
+        padding: 41px 0px 70px 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .reason p {
+        width: 344px;
+        height: 50px;
+        margin-top: 16px;
+    }
+
+    .reasonContent {
+        width: 455px;
+        height: 98px;
+        padding: 0px 0px 0px 111px;
+        text-align: left;
+        background-position: 0% 50%;
+        background-size: 55px;
+        margin-bottom: 0px;
+    }
+}
