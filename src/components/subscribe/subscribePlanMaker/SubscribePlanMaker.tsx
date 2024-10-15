@@ -15,6 +15,13 @@ interface planPrices {
     [option: string]: number;
 }
 
+/**
+ * Renders the form where the user can customize the coffee delivery plan.
+ * This component provides options for selecting preferences, bean type, quantity, grind option, and delivery frequency.
+ * It also manages state for user choices, pricing, and dialog visibility.
+ *
+ * @returns {JSX.Element} - The SubscribePlanMaker component.
+ */
 const SubscribePlanMaker: React.FC = () => {
     const { option01, option02, option03, option04, option05 } = OptionsData;
     const [plan, setPlan] = useState<planResume>({ preferences: '_____', beanType: '_____', quantity: '_____', grindOption: '_____', deliveries: '_____' });
@@ -38,6 +45,14 @@ const SubscribePlanMaker: React.FC = () => {
         }
     }, [plan]);
 
+    /**
+     * Updates the selected choice and its price for a specific plan option.
+     * Also checks if the grind option should be blocked based on the selected preferences.
+     *
+     * @param {string} optionID - The ID of the plan option being updated.
+     * @param {string} selectedChoice - The choice selected by the user.
+     * @param {number} value - The price associated with the selected choice.
+     */
     const getChoice = (optionID: string, selectedChoice: string, value: number) => {
         setPlan((prevPlan) => {
             const updatedPlan = { ...prevPlan, [optionID]: selectedChoice };
@@ -58,6 +73,10 @@ const SubscribePlanMaker: React.FC = () => {
         console.log(value);
     };
 
+    /**
+     * Toggles the visibility of the confirmation dialog.
+     * Calculates the total price and deducts the grind option cost if the selected preference is "Capsules".
+     */
     const displayDialog = () => {
         let price = 0;
         setShowDialog(!showDialog);
