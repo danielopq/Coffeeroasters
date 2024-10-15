@@ -27,7 +27,7 @@
 }
 
 #mainNavBarLinks button:hover {
-    opacity: 0.4;
+    color:var(--darkGrey);
 }
 
 /*############################## TABLET VERSION ##############################*/
