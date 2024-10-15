@@ -69,8 +69,6 @@ const SubscribePlanMaker: React.FC = () => {
             const updatedPlan = { ...prevPlan, [optionID]: value };
             return updatedPlan;
         });
-
-        console.log(value);
     };
 
     /**
