@@ -50,5 +50,21 @@
     display: none;
 }
 
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .option{
+        margin-bottom: 100px;
+    }
+    
+    .option button{
+        font: 32px/48px 'Fraunces-Black';
+    }
+    
+    .optionChoices{
+        margin-top: 40px;
+    }
+}
+
 
 

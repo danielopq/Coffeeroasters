@@ -24,14 +24,16 @@ interface PlanOptionProps {
 }
 
 /**
- * Component that renders an individual product option within a plan, allowing the user to make a selection.
- * @param {PlanOptionProps} param0 - The properties for the component:
- * - `optionID`: A unique identifier for the option.
- * - `option`: The details of the option, including the header and the choices.
- * - `deployed`: Determines if the choices should be displayed.
- * - `blocked`: Optional flag to disable interactions with the option.
- * - `getChoice`: Function to be called when a choice is selected.
- * @returns {JSX.Element} The rendered component displaying the product option.
+ * Renders a single plan option that allows users to select from different choices.
+ * The component supports collapsing/expanding the choices and can be disabled based on the blocked state.
+ *
+ * @param {PlanOptionProps} props - The properties for the component:
+ * @param {string} props.optionID - A unique identifier for the option.
+ * @param {Option} props.option - Contains the option's header and the available choices.
+ * @param {boolean} props.deployed - Whether the choices should be initially displayed.
+ * @param {boolean} [props.blocked] - Optional flag to disable interactions and selection.
+ * @param {function} props.getChoice - Callback function triggered when a choice is selected.
+ * @returns {JSX.Element} The rendered component that displays the plan option.
  */
 const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blocked = false, getChoice }) => {
 
