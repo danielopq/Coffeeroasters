@@ -25,12 +25,14 @@ const Home: React.FC = () => {
 
     return (
         <main id="home">
-            <HomeHeader handleClick={()=> handleClick('/subscribe')}/>
-            <HomeCollection/>
-            <HomeWhyChooseUs/>
-            <h4>How it works?</h4>
-            <PlanSteps fontColor='dark'/>
-            <MainButton value={'Create your plan'} handleClick={()=> handleClick('/subscribe')}/>
+            <HomeHeader handleClick={() => handleClick('/subscribe')} />
+            <HomeCollection />
+            <HomeWhyChooseUs />
+            <div id="homeHowItWorks">
+                <h4>How it works?</h4>
+                <PlanSteps fontColor='dark' />
+                <MainButton value={'Create your plan'} handleClick={() => handleClick('/subscribe')} />
+            </div>
             <Footer />
         </main>
     )
