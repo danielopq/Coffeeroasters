@@ -25,3 +25,16 @@
 .planChoice{
     color:var(--darkCyan);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #planSummary{
+        width: 689px;
+        padding: 27px 44px;
+    }
+
+    #planSummary-content p[class='mainText']{
+        margin-bottom: 8px;
+    }
+}
