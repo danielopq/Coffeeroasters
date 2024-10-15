@@ -46,12 +46,13 @@
     color: var(--paleOrange);
 }
 
-.step h3 {
+.stepHeader {
     width: 255px;
     margin: 38px 0px 42px 0px;
+    font: 32px/36px 'Fraunces-Black';
 }
 
-.dark h3 {
+.dark p[class='stepHeader'] {
     color: var(--darkGrey);
 }
 
@@ -59,7 +60,7 @@
     color: var(--darkGrey);
 }
 
-.light h3 {
+.light p[class='stepHeader'] {
     color: var(--lightCream);
 }
 
@@ -93,8 +94,9 @@
         padding-right: 17px;
     }
 
-    .step h3 {
+    .stepHeader {
         width: 223px;
         margin: 42px 0px 38px 0px;
+        font: 28px/36px 'Fraunces-Black';
     }
 }

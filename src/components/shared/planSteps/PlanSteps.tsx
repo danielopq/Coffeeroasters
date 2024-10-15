@@ -24,7 +24,7 @@ const PlanSteps: React.FC<PlanStepsProps> = ({ fontColor }) => {
             <div id="planStepsIndications" className={fontColor}>
                 <div className='step'>
                     <p className='stepNumber'>01</p>
-                    <h3>Pick your coffee</h3>
+                    <p className='stepHeader'>Pick your coffee</p>
                     <p className='mainText'>
                         Select from our evolving range of artisan coffees.
                         Our beans are ethically sourced and we pay fair prices for them.
@@ -33,7 +33,7 @@ const PlanSteps: React.FC<PlanStepsProps> = ({ fontColor }) => {
                 </div>
                 <div className='step'>
                     <p className='stepNumber'>02</p>
-                    <h3>Choose the frequency</h3>
+                    <p className='stepHeader'>Choose the frequency</p>
                     <p className='mainText'>
                         Customize your order frequency, quantity, even your
                         roast style and grind type. Pause, skip, or cancel your subscription with
@@ -42,7 +42,7 @@ const PlanSteps: React.FC<PlanStepsProps> = ({ fontColor }) => {
                 </div>
                 <div className='step'>
                     <p className='stepNumber'>03</p>
-                    <h3>Receive and enjoy!</h3>
+                    <p className='stepHeader'>Receive and enjoy!</p>
                     <p className='mainText'>
                         We ship your package within 48 hours, freshly roasted.
                         Sit back and enjoy award-winning world-class coffees curated to provide
