@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
-#planStepsGraphic{
+#planStepsGraphic {
     width: inherit;
     height: 31px;
     display: flex;
@@ -15,20 +15,20 @@
     justify-content: flex-start;
 }
 
-.stepsCircle{
+.stepsCircle {
     width: 29px;
     height: 29px;
     border-radius: 50%;
     border: solid 1px var(--darkCyan);
 }
 
-.stepsLine{
+.stepsLine {
     width: 349px;
     height: 2px;
     background-color: var(--paleOrange);
 }
 
-#planStepsIndications{
+#planStepsIndications {
     width: inherit;
     height: 355px;
     display: flex;
@@ -36,33 +36,65 @@
     justify-content: space-between;
 }
 
-.step{
+.step {
     width: 285px;
     height: inherit;
 }
 
-.stepNumber{
+.stepNumber {
     font: 900 72px/72px 'Fraunces-Black';
     color: var(--paleOrange);
 }
 
-.step h3{
+.step h3 {
     width: 255px;
     margin: 38px 0px 42px 0px;
 }
 
-.dark h3{
+.dark h3 {
     color: var(--darkGrey);
 }
 
-.dark p[class='mainText']{
+.dark p[class='mainText'] {
     color: var(--darkGrey);
 }
 
-.light h3{
+.light h3 {
     color: var(--lightCream);
 }
 
-.light p[class='mainText']{
+.light p[class='mainText'] {
     color: var(--lightCream);
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .planSteps {
+        width: 689px;
+        height: 450px;
+    }
+
+    #planStepsGraphic {
+        width: 497px;
+    }
+
+    .stepsLine {
+        width: 202px;
+    }
+
+    #planStepsIndications {
+        height: auto;
+    }
+
+    .step {
+        width: 223px;
+        height: 390px;
+        padding-right: 17px;
+    }
+
+    .step h3 {
+        width: 223px;
+        margin: 42px 0px 38px 0px;
+    }
 }
