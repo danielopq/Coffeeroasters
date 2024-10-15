@@ -19,9 +19,34 @@
 #commitmentText{
     width: 538px;
     height: 340px;
+    opacity: 0.8;
 }
 
 #commitmentText p{
     margin-top: 32px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #aboutUsCommitment{
+        width: 689px;
+        height: 470px;
+        margin-top: 144px;
+    }
+    
+    #commitmentPic{
+        width: 281px;
+        background: url('./img/tablet-commitment.jpg') center/281px;
+    }
+    
+    #commitmentText{
+        width: 339px;
+        height: 453px;
+    }
+    
+    #commitmentText p{
+        margin-top: 30px;
+    }
 }
 
