@@ -1,4 +1,3 @@
-import './aboutUs.css';
 import Footer from '../shared/footer/Footer';
 import AboutUsHeader from './aboutUsHeader/AboutUsHeader';
 import AboutUsCommitment from './aboutUsCommitment/AboutUsCommitment';

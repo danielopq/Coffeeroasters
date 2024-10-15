@@ -14,5 +14,22 @@
     width: 445px;
     height: 104px;
     margin-top: 24px;
+    color: rgba(254,252,247,0.8);
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #aboutUsHeader{
+        width: 689px;
+        height: 400px;
+        padding: 118px 0px 0px 58px;
+        background: url('./img/whitecup-tablet.jpg') center/689px no-repeat;
+    }
+    
+    #aboutUsHeader p{
+        width: 398px;
+        height: 100px;
+    }
 }
 
