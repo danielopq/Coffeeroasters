@@ -13,7 +13,7 @@
 }
 
 .enabled:hover{
-    color:rgba(254,252,247,0.4)
+    background-color: #66D2CF;
 }
 
 .disabled{
