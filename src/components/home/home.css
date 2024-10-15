@@ -21,21 +21,17 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #homeHowItWorks{
-        width: 1280px;
-        height: auto;
-        padding-left: 85px;
-        margin: 200px 0px;
+        width: 688px;
+        padding-left: 0px;
+        margin: 144px 0px;
+        border: solid 1px red;
     }
-    
-    #homeHowItWorks h4 {
-        color: var(--grey);
-    }
-    
+
     #homeHowItWorks div[class='planSteps'] {
-        margin-top: 80px;
+        margin-top: 40px;
     }
     
     #homeHowItWorks button {
-        margin-top: 80px;
+        margin-top: 44px;
     }
 }
