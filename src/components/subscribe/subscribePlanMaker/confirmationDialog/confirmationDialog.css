@@ -5,15 +5,15 @@
     z-index: 100;
     top: 0px;
     position: fixed;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;    /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
-.showDialog{
+.showDialog {
     display: flex;
 }
 
-.hideDialog{
+.hideDialog {
     display: none;
 }
 
@@ -23,13 +23,13 @@
     border-radius: 8px;
     background-color: var(--lightCream);
     overflow: hidden;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
 
-#confirmationDialog-header{
+#confirmationDialog-header {
     width: inherit;
     height: 136px;
     padding: 48px 0px 40px 56px;
@@ -37,7 +37,7 @@
     background-color: var(--darkGrey);
 }
 
-#confirmationDialog-summary{
+#confirmationDialog-summary {
     width: 428px;
     height: 160px;
     font: 24px/40px 'Fraunces-Black';
@@ -45,24 +45,24 @@
     color: var(--grey);
 }
 
-.confDialogChoice{
-    color:var(--darkCyan);
+.confDialogChoice {
+    color: var(--darkCyan);
 }
 
-#confirmationDialog-instructions{
+#confirmationDialog-instructions {
     width: 428px;
     height: 78px;
     margin-top: 7px;
     color: var(--grey);
 }
 
-#confirmationDialog-buttonArea{
+#confirmationDialog-buttonArea {
     width: 428px;
     height: 56px;
     margin-top: 47px;
     font: 32px/36px 'Fraunces-Black';
     color: var(--darkGrey);
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
