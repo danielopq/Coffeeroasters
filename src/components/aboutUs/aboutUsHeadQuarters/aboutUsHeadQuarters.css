@@ -1,4 +1,4 @@
-#aboutUsHeadQuarters{
+#aboutUsHeadQuarters {
     width: 1045px;
     height: 366px;
     margin: 168px 0px;
@@ -7,11 +7,11 @@
     justify-content: space-between;
 }
 
-#aboutUsHeadQuarters h4{
+#aboutUsHeadQuarters h4 {
     color: var(--grey);
 }
 
-#headQuatersInfo{
+#headQuatersInfo {
     width: inherit;
     height: 262px;
     display: flex;
@@ -19,35 +19,57 @@
     justify-content: space-between;
 }
 
-.headQuaterDetails{
+.headQuaterDetails {
     width: 285px;
     height: 167px;
     color: var(--darkGrey);
 }
 
-.headQuaterDetails h3{
+.headQuaterDetails h3 {
     width: inherit;
     margin: 45px 0px 24px 0px;
 }
 
-.countryPic{
+.countryPic {
     width: 51px;
     height: 51px;
     background-position: 0% 0%;
     background-repeat: no-repeat;
 }
 
-#UK-pic{
+#UK-pic {
     background-image: url('./img/uk.svg');
 }
 
-#Canada-pic{
+#Canada-pic {
     background-image: url('./img/canada.svg');
 }
 
-#Australia-pic{
+#Australia-pic {
     background-image: url('./img/australia.svg');
 }
 
+/*############################## TABLET VERSION ##############################*/
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    #aboutUsHeadQuarters {
+        width: 688px;
+        margin: 144px 0px;
+    }
 
+    .headQuaterDetails {
+        width: 223px;
+        height: 134px;
+    }
+
+    .headQuaterDetails h3 {
+        margin: 49px 0px 24px 0px;
+    }
+
+    .countryPic {
+        width: 51px;
+        height: 51px;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+    }
+}
