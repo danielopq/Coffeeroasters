@@ -10,8 +10,21 @@ interface PlanIndexProps{
     blockGrindOption:boolean;
 }
 
-const PlanIndex:React.FC<PlanIndexProps> = ({preferences,beanType,quantity,grindOption,deliveries,blockGrindOption=false})=>{
 
+/**
+ * Renders the plan index used within the SubscribePlanMaker component.
+ * Displays the selected options and applies styles based on their current state.
+ *
+ * @param {PlanIndexProps} props - The properties for the PlanIndex component.
+ * @param {string} props.preferences - User-selected coffee preferences.
+ * @param {string} props.beanType - Selected type of coffee bean.
+ * @param {string} props.quantity - Chosen coffee quantity.
+ * @param {string} props.grindOption - Selected grind option, if applicable.
+ * @param {string} props.deliveries - Selected delivery frequency.
+ * @param {boolean} props.blockGrindOption - Flag indicating whether the grind option is disabled.
+ * @returns {JSX.Element} - The rendered PlanIndex component.
+ */
+const PlanIndex:React.FC<PlanIndexProps> = ({preferences,beanType,quantity,grindOption,deliveries,blockGrindOption=false})=>{
 
     const refGrindOption = useRef<HTMLDivElement>(null);
 
