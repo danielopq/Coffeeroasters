@@ -91,7 +91,7 @@
         height: 588px;
         flex-direction: column;
         margin-top: -275px;
-        
+
     }
 
     .reason {
@@ -117,5 +117,39 @@
         background-position: 0% 50%;
         background-size: 55px;
         margin-bottom: 0px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #homeWhyChooseUs {
+        width: 327px;
+        height: 902px;
+        flex-direction: column;
+        margin-top: 120px;
+        padding-top: 64px;
+    }
+
+    #homeWhyChooseUs p {
+        width: 279px;
+        height: 125px;
+        margin-top: 24px;
+    }
+
+    #homeReasons {
+        width: 279px;
+        height: 1194px;
+        flex-direction: column;
+        margin-top: -597px;
+    }
+
+    .reason {
+        width: inherit;
+        height: 382px;
+    }
+
+    .reasonContent {
+        margin-bottom: 48px;
     }
 }

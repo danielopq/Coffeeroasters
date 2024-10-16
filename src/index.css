@@ -126,6 +126,10 @@ p{
         font: 900 40px/40px 'Fraunces-Black';
     }
 
+    h2{
+        font: 28px/28px 'Fraunces-Black';
+    }
+
     .mainText{
         font: 400 15px/25px 'Barlow-Regular'; 
     }

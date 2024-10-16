@@ -4,7 +4,7 @@ import './homeWhyChooseUs.css';
  * Functional component that renders the "Why choose us" section on the home page. 
  * @returns {JSX.Element} - The "Why choose us" section.
  */
-const HomeWhyChooseUs = () => {
+const HomeWhyChooseUs:React.FC = () => {
     return (
         <>
             <div id="homeWhyChooseUs">
