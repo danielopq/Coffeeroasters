@@ -100,3 +100,33 @@
         font: 28px/36px 'Fraunces-Black';
     }
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    .planSteps {
+        width: 327px;
+        height: auto;
+    }
+    
+    #planStepsGraphic {
+        display: none;
+    }
+
+    #planStepsIndications {
+        height: 871px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .step {
+        width: inherit;
+        height: 253px;
+    }
+
+    .stepHeader {
+        width: inherit;
+        margin: 24px 0px;
+        font: 28px/32px 'Fraunces-Black';
+    }
+}
