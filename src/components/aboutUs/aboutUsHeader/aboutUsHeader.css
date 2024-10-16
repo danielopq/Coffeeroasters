@@ -1,4 +1,4 @@
-#aboutUsHeader{
+#aboutUsHeader {
     width: 1280px;
     height: 450px;
     padding: 137px 0px 0px 85px;
@@ -10,26 +10,43 @@
     color: var(--lightCream);
 }
 
-#aboutUsHeader p{
+#aboutUsHeader p {
     width: 445px;
     height: 104px;
     margin-top: 24px;
-    color: rgba(254,252,247,0.8);
+    color: rgba(254, 252, 247, 0.8);
 }
 
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #aboutUsHeader{
+    #aboutUsHeader {
         width: 689px;
         height: 400px;
         padding: 118px 0px 0px 58px;
         background: url('./img/whitecup-tablet.jpg') center/689px no-repeat;
     }
-    
-    #aboutUsHeader p{
+
+    #aboutUsHeader p {
         width: 398px;
         height: 100px;
     }
 }
 
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #aboutUsHeader {
+        width: 327px;
+        height: 400px;
+        padding: 111px 24px 0px;
+        background: url('./img/whitecup-mobile.jpg') center/327px no-repeat;
+        align-items: center;
+        text-align: center;
+    }
+
+    #aboutUsHeader p {
+        width: 279px;
+        height: 150px;
+    }
+}
