@@ -34,3 +34,14 @@
         margin-top: 44px;
     }
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #homeHowItWorks{
+        width: 327px;
+        padding-left: 0px;
+        margin: 120px 0px;
+        text-align: center;
+    }
+}
