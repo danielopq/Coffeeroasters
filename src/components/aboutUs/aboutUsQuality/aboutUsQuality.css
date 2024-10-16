@@ -63,3 +63,34 @@
         margin-top: 24px;
     }
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #aboutUsQuality {
+        width: 327px;
+        height: 509px;
+        margin-top: 120px;
+    }
+
+    #qualityPic {
+        width: 279px;
+        height: 156px;
+        margin: -78px 0px 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('./img/mobile-image-quality.jpg') center/279px;
+    }
+
+    #qualityInfo {
+        height: inherit;
+        margin-top: 0px;
+        padding: 142px 24px 0px;
+        text-align: center;
+    }
+
+    #aboutUsQuality p {
+        width: 279px;
+        margin-top: 24px;
+    }
+}
