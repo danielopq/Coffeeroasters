@@ -18,7 +18,7 @@
 #homeHeader p {
     width: 445px;
     height: 78px;
-    color: rgba(254,252,247,0.8);
+    color: rgba(254, 252, 247, 0.8);
     margin-top: 32px;
 }
 
@@ -49,5 +49,33 @@
 
     #homeHeader button {
         margin-top: 44px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #homeHeader {
+        width: 327px;
+        height: 500px;
+        align-items: center;
+        background: url('./img/coffeepress-mobile.jpg') center/327px no-repeat;
+        padding: 100px 24px 0px;
+        text-align: center;
+    }
+
+    #homeHeader h1 {
+        width: 279px;
+        height: 81px;
+    }
+
+    #homeHeader p {
+        width: 279px;
+        height: 101px;
+        margin-top: 24px;
+    }
+
+    #homeHeader button {
+        margin-top: 56px;
     }
 }
