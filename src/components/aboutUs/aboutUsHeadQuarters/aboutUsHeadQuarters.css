@@ -73,3 +73,35 @@
         background-repeat: no-repeat;
     }
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #aboutUsHeadQuarters {
+        width: 327px;
+        height: auto;
+        margin: 120px 0px;
+        text-align: center;
+    }
+
+    #headQuatersInfo {
+        height: 940px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 72px;  
+    }
+
+    .headQuaterDetails {
+        width: inherit;
+        height: 256px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headQuaterDetails h3 {
+        width: inherit;
+        margin: 47px 0px 22px 0px;
+    }
+}
