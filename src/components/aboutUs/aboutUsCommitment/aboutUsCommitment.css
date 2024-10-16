@@ -1,4 +1,4 @@
-#aboutUsCommitment{
+#aboutUsCommitment {
     width: 1110px;
     height: 520px;
     display: flex;
@@ -9,44 +9,70 @@
     color: var(--darkGrey);
 }
 
-#commitmentPic{
+#commitmentPic {
     width: 445px;
     height: inherit;
     border-radius: 8px;
     background: url('./img/desktop-commitment.jpg') center/445px;
 }
 
-#commitmentText{
+#commitmentText {
     width: 538px;
     height: 340px;
-    opacity: 0.8;
 }
 
-#commitmentText p{
+#commitmentText p {
     margin-top: 32px;
+    opacity: 0.8;
 }
 
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #aboutUsCommitment{
+    #aboutUsCommitment {
         width: 689px;
         height: 470px;
         margin-top: 144px;
     }
-    
-    #commitmentPic{
+
+    #commitmentPic {
         width: 281px;
         background: url('./img/tablet-commitment.jpg') center/281px;
     }
-    
-    #commitmentText{
+
+    #commitmentText {
         width: 339px;
         height: 453px;
     }
-    
-    #commitmentText p{
+
+    #commitmentText p {
         margin-top: 30px;
     }
 }
 
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #aboutUsCommitment {
+        width: 327px;
+        height: 901px;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    #commitmentPic {
+        width: 327px;
+        height: 400px;
+        background: url('./img/mobile-commitment.jpg') center/327px;
+    }
+
+    #commitmentText {
+        width: 327px;
+        height: 453px;
+        text-align: center;
+    }
+
+    #commitmentText p {
+        margin-top: 30px;
+    }
+}
