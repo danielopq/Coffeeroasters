@@ -94,7 +94,6 @@ p{
 @media (min-width: 768px) and (max-width: 1024px) {
     main{
         width: 100vw;
-        height: auto;
         padding: 113px 0px 72px 0px;
     }
 
@@ -112,5 +111,12 @@ p{
 
     .mainText{
         font: 400 15px/25px 'Barlow-Regular'; 
+    }
+}
+
+@media screen and (max-width:767px) {
+    main{
+        width: 100vw;
+        padding: 32px 0px 88px 72px;
     }
 }
