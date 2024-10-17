@@ -30,6 +30,54 @@
     color:var(--darkGrey);
 }
 
+#menuMobileIcon{
+    width: 16px;
+    height: inherit;
+    float: right;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    cursor:pointer;
+}
+
+.showBurgerIcon{
+    background-image: url('./img/icon-hamburger.svg');
+}
+
+.showCloseIcon{
+    background-image: url('./img/icon-close.svg');
+}
+
+#mobileMenu{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 90px;
+    padding: 40px 0px 0px;
+    position: absolute;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    color: var(--darkGrey);
+    background: linear-gradient(to bottom, rgba(254, 252, 247, 1) 50%, rgba(254, 252, 247, 0.5) 100%);
+}
+
+.mobileMenuDisplayed{
+    display: flex;
+}
+
+.mobileMenuHidden{
+    display: none;
+}
+
+#mobileMenu button{
+    background-color: transparent;
+    border: none;
+    font: 900 24px/32px 'Fraunces-Black';
+    margin-bottom: 32px;
+    cursor:pointer;
+}
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -37,5 +85,24 @@
         width: 689px;
         height: 26px;
         margin: 40px 0px 0px 0px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #mainNavBar {
+        width: 327px;
+        height: 26px;
+        margin: 32px 0px 0px 0px;
+        background: url('./img/logo.svg') left/163px no-repeat;
+    }
+    
+    #mainNavBarLinks {
+        display: none;
+    }
+
+    #menuMobileIcon{
+        display: block;
     }
 }
