@@ -1,4 +1,4 @@
-#planSummary{
+#planSummary {
     width: 730px;
     height: auto;
     margin-bottom: 40px;
@@ -7,34 +7,48 @@
     background-color: var(--darkGrey);
 }
 
-#planSummary-content{
+#planSummary-content {
     display: flex;
     flex-direction: column;
 }
 
-#planSummary-content p[class='mainText']{
-    color: rgba(255,255,255,0.5);
+#planSummary-content p[class='mainText'] {
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 9px;
 }
 
-#planSummary-resumeText{
+#planSummary-resumeText {
     font: 900 24px/40px 'Fraunces-Black';
     color: white;
 }
 
-.planChoice{
-    color:var(--darkCyan);
+.planChoice {
+    color: var(--darkCyan);
 }
 
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #planSummary{
+    #planSummary {
         width: 689px;
         padding: 27px 44px;
     }
 
-    #planSummary-content p[class='mainText']{
+    #planSummary-content p[class='mainText'] {
+        margin-bottom: 8px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #planSummary {
+        width: 328px;
+        margin-bottom: 56px;
+        padding: 32px 25px;
+    }
+
+    #planSummary-content p[class='mainText'] {
         margin-bottom: 8px;
     }
 }
