@@ -27,11 +27,30 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     #subscribePlanMaker {
         width: 689px;
-        height: auto;
         margin: 144px 0px;
     }
-        
+
     #planOptions {
         width: inherit;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #subscribePlanMaker {
+        width: 328px;
+        margin: 120px 0px;
+        align-items: center;
+    }
+
+    #planMakerContent {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #planOptions {
+        width: inherit;
+        height: auto;
     }
 }
