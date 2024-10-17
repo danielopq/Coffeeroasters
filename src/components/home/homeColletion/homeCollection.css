@@ -18,33 +18,46 @@
     height: 399px;
     position: absolute;
     margin-top: -70px;
+    display: grid;
+    grid-template-rows: 399px;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-areas:
+        "granExpreso planalto picollo danche";
+    column-gap: 30px;
+}
+
+.variety {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#homeCoffeePictures {
-    width: inherit;
-    height: 193px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .coffeePacketPic {
     width: 255px;
-    height: inherit;
+    height: 193px;
     background-position: 90% 100%;
     background-size: 230px;
     background-repeat: no-repeat;
+}
+
+#granExpreso {
+    grid-area: granExpreso;
 }
 
 #granExpresoPic {
     background-image: url('./img/image-gran-espresso.png');
 }
 
+#planalto {
+    grid-area: planalto;
+}
+
 #planaltoPic {
     background-image: url('./img/image-planalto.png');
+}
+
+#picollo {
+    grid-area: picollo;
 }
 
 #picolloPic {
@@ -52,25 +65,20 @@
 }
 
 #danchePic {
-    background-image: url('./img/image-danche.png');
+    grid-area: danche;
 }
 
-#homeCoffeFeatures {
-    width: inherit;
-    height: 134px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    color: var(--darkGrey);
+#danchePic {
+    background-image: url('./img/image-danche.png');
 }
 
 .homeCoffeVariety {
     width: 255px;
-    height: inherit;
+    height: 134px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 .homeCoffeeName {
@@ -87,28 +95,36 @@
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
     #homeCollection {
         width: 689px;
         height: 927px;
+        margin-top: 144px;
     }
 
     #homeOurCollection {
         width: 689px;
         height: 118px;
-        font: 900 96px/103px 'Fraunces-Black';        
+        font: 900 96px/103px 'Fraunces-Black';
     }
 
     #homeCoffeVarieties {
         width: 573px;
         height: 868px;
         margin: -70px 58px 0px 58px;
-        flex-direction: row;
+        grid-template-rows: 193px 193px 193px 193px;
+        grid-template-columns: 573px;
+        grid-template-areas:
+            "granExpreso"
+            "planalto"
+            "picollo"
+            "danche";
+        column-gap: 0px;
+        row-gap: 32px;
     }
 
-    #homeCoffeePictures {
-        width: 255px;
-        height: inherit;
-        flex-direction: column;
+    .variety {
+        flex-direction: row;
     }
 
     .coffeePacketPic {
@@ -117,17 +133,11 @@
         background-size: 226px;
     }
 
-    #homeCoffeFeatures {
-        width: 282px;
-        height: inherit;
-        flex-direction: column;
-        text-align: left;
-    }
-
     .homeCoffeVariety {
-        width: inherit;
+        width: 282px;
         height: 193px;
         justify-content: flex-start;
+        text-align: left;
     }
 
     .homeCoffeeName {
@@ -136,5 +146,59 @@
 
     .homeDescription {
         margin-top: 24px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #homeCollection {
+        width: 375px;
+        height: 1321px;
+        margin-top: 120px;
+    }
+
+    #homeOurCollection {
+        width: 375px;
+        height: 72px;
+        font: 900 40px/72px 'Fraunces-Black';
+    }
+
+    #homeCoffeVarieties {
+        width: 375px;
+        height: 1236px;
+        margin-top: 13px;
+        padding: 0px 47px;
+        grid-template-rows: 273px 273px 273px 273px;
+        grid-template-columns: 282px;
+        grid-template-areas:
+            "granExpreso"
+            "planalto"
+            "picollo"
+            "danche";
+        column-gap: 0px;
+        row-gap: 48px;
+    }
+
+    .variety {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coffeePacketPic {
+        width: 282px;
+        height: 151px;
+        background-position: 60% 80%;
+        background-size: 170px;
+    }
+
+    .homeCoffeVariety {
+        width: 282px;
+        height: 98px;
+        margin-top: 24px;
+    }
+
+    .homeDescription {
+        height: 50px;
     }
 }
