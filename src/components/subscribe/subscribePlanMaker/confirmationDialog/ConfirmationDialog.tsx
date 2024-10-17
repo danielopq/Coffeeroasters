@@ -8,9 +8,9 @@ interface PlanSummaryProps {
     quantity: string;
     grindOption: string;
     deliveries: string;
-    showDialog:boolean;
-    finalPrice:number;
-    displayDialog:()=>void;
+    showDialog: boolean;
+    finalPrice: number;
+    displayDialog: () => void;
 }
 
 
@@ -31,15 +31,15 @@ interface PlanSummaryProps {
  * 
  * @returns {JSX.Element} - The rendered confirmation dialog component.
  */
-const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries,showDialog=false,finalPrice,displayDialog }) => {
+const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType, quantity, grindOption, deliveries, showDialog = false, finalPrice, displayDialog }) => {
 
-    useEffect(()=>{
-        if(showDialog){
+    useEffect(() => {
+        if (showDialog) {
             document.body.style.overflow = 'hidden';
-        }else{
+        } else {
             document.body.style.overflow = 'auto';
         }
-    },[showDialog]);
+    }, [showDialog]);
 
     return (
         <div id="confirmationDialog" className={showDialog ? 'showDialog' : 'hideDialog'}>
@@ -59,8 +59,9 @@ const ConfirmationDialog: React.FC<PlanSummaryProps> = ({ preferences, beanType,
                     Subscription discount codes can also be redeemed at the checkout.
                 </p>
                 <div id="confirmationDialog-buttonArea">
-                <p id="confirmationDialog-fee">${finalPrice.toFixed(2)}/sh.</p>
-                    <MainButton value='Checkout' handleClick={displayDialog}/>
+                    <p id="confirmationDialog-fee">${finalPrice.toFixed(2)}/sh.</p>
+                    <div id="dialogCheckout-bt"><MainButton value='Checkout' handleClick={displayDialog} /></div>
+                    <div id="dialogCheckout-mobileBt"><MainButton value={`Checkout - ${finalPrice.toFixed(2)}/sh.`} handleClick={displayDialog} /></div>
                 </div>
             </div>
         </div>

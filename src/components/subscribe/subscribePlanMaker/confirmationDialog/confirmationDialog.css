@@ -67,3 +67,52 @@
     align-items: center;
     justify-content: space-between;
 }
+
+#dialogCheckout-mobileBt {
+    display: none;
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+
+    #confirmationDialog-content {
+        width: 327px;
+    }
+
+    #confirmationDialog-header {
+        height: 88px;
+        padding: 28px 0px 28px 24px;
+    }
+
+    #confirmationDialog-summary {
+        width: 279px;
+        height: 240px;
+        margin-top: 40px;
+    }
+
+    #confirmationDialog-instructions {
+        width: 279px;
+        height: 125px;
+        margin-top: 0px;
+    }
+
+    #confirmationDialog-fee {
+        display: none;
+    }
+
+    #confirmationDialog-buttonArea {
+        width: 279px;
+        margin-top: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #dialogCheckout-bt {
+        display: none;
+    }
+
+    #dialogCheckout-mobileBt {
+        display: block;
+    }
+}
