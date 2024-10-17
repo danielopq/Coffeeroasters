@@ -26,3 +26,20 @@
         width: 398px;
     }
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #subscribeHeader{
+        width: 327px;
+        height: 400px;
+        padding: 101px 24px 0px 24px;
+        background: url('./img/mobile-blackcup.jpg') center/327px no-repeat;
+        text-align: center;
+    }
+    
+    #subscribeHeader p{
+        width: 279px;
+        margin-top: 22px;
+    }
+}
