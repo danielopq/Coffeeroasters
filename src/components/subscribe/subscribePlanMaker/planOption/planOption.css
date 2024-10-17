@@ -81,8 +81,8 @@
     
     .optionChoices{
         width: inherit;
-        height: 250px;
-        flex-direction: row;
+        height: 452px;
+        flex-direction: column;
         justify-content: space-between;
         margin-top: 56px;
     }
