@@ -38,3 +38,10 @@
     }
 }
 
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #planIndex {
+        display: none;
+    }
+}
