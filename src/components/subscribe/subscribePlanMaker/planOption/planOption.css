@@ -66,5 +66,27 @@
     }
 }
 
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    .option{
+        margin-bottom: 32px;
+    }
+    
+    .option button{
+        height: 56px;
+        font: 24px/28px 'Fraunces-Black';
+        padding-right: 88px;
+    }
+    
+    .optionChoices{
+        width: inherit;
+        height: 250px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 56px;
+    }
+}
+
 
 
