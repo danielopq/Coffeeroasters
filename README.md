@@ -24,18 +24,17 @@ The result is a user-friendly and visually appealing site that makes exploring c
 
 ### Screenshots
 
-- Home desktop version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-desktop.png]
-- Home tablet version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-tablet.png]
-- Home mobile version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-mobile.png]
+- Home desktop version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-desktop.png]
+- Home tablet version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-tablet.png]
+- Home mobile version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-mobile.png]
 
-- Moon desktop version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-desktop.png]
-- Moon tablet version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-tablet.png]
-- Moon mobile version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-mobile.png]
-
+- Create your plan desktop version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-desktop.png]
+- Create your plan tablet version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-mobile.png]
+- Create your plan mobile version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-tablet.png]
 
 ### Links
 
-- Live Site URL: [https://danielmartinez-spacetourism.netlify.app]
+- Live Site URL: [https://danielmartinez-coffeeroasters.netlify.app]
 
 ## My process
 
