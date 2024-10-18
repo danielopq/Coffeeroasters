@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+## Table of contents
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Overview](#overview)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+This project is a three-section coffee website with a clean and simple, yet attractive design. The site provides information about the company and its various coffee varieties, while also allowing customers to customize a regular delivery plan according to their tastes and needs. The entire website has been developed using React and TypeScript, ensuring a modern, maintainable, and efficient codebase.
+Key Features:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  - Customizable Delivery Plans: One of the standout features of the website is the "Create Your Plan" section. This section allows users to design a personalized coffee subscription by selecting different options for coffee types, grind preferences, quantity, and delivery frequency. The interface includes an intuitive step-by-step process with multiple choice options, an interactive index, and an order summary that visually guides users through the customization process, making it easy and engaging.
 
-- Configure the top-level `parserOptions` property like this:
+  - Responsive Design: The website has been fully optimized for different devices, with distinct layouts for desktop, laptop, and mobile versions. This ensures a seamless user experience across all screen sizes.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  - Modern Tech Stack: Built with React for the front-end and TypeScript for type safety and code quality, the website demonstrates best practices in modern web development, including component-based architecture and state management.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The result is a user-friendly and visually appealing site that makes exploring coffee options and setting up personalized delivery plans simple and enjoyable.     
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Screenshots
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Home desktop version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-desktop.png]
+- Home tablet version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-tablet.png]
+- Home mobile version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-mobile.png]
+
+- Moon desktop version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-desktop.png]
+- Moon tablet version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-tablet.png]
+- Moon mobile version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-mobile.png]
+
+
+### Links
+
+- Live Site URL: [https://danielmartinez-spacetourism.netlify.app]
+
+## My process
+
+I initially developed the website entirely for the desktop version, ensuring all elements were properly structured and aligned with the design specifications. After confirming that the desktop layout met all functional and aesthetic requirements, I proceeded to adapt the design for tablet and mobile devices.
+
+The mobile and tablet versions were implemented using CSS media queries, allowing for seamless responsiveness across various screen sizes without the need for a complete redesign. By adjusting layouts, typography, and element positioning through media queries, I ensured a consistent user experience across devices while maintaining the integrity of the original design.
+
+Key aspects of the process included:
+
+  - Desktop-first approach for optimizing performance and usability on larger screens before scaling down to smaller devices.
+  - Responsive layouts that dynamically adjust content and visuals, ensuring a clean and intuitive user interface on both tablets and smartphones.
+  - Testing and optimization across multiple devices and browsers to ensure cross-platform compatibility and a smooth user experience on all devices.
+
+### Built with
+
+- Visual studio code
+- Figma
+- Git
+- HTML
+- CSS
+- TypeScript
+- React
+- Vite
+
+## Author
+
+I am a focused and dedicated professional with a strong educational foundation and hands-on experience in programming and web development. My expertise in PHP, SQL, JavaScript, HTML, CSS, JAVA and other modern web technologies enables me to build engaging, efficient, and visually appealing websites that meet both user needs and business goals.
+
+- linkedin - [www.linkedin.com/in/danielmartinezduque]
