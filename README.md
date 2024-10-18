@@ -24,13 +24,13 @@ The result is a user-friendly and visually appealing site that makes exploring c
 
 ### Screenshots
 
-- Home desktop version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-desktop.png]
-- Home tablet version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-tablet.png]
-- Home mobile version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-mobile.png]
+- [Home desktop version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-desktop.png)
+- [Home tablet version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-tablet.png)
+- [Home mobile version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-mobile.png)
 
-- Create your plan desktop version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-desktop.png]
-- Create your plan tablet version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-mobile.png]
-- Create your plan mobile version: [https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-tablet.png]
+- [Create your plan desktop version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-desktop.png)
+- [Create your plan tablet version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-mobile.png)
+- [Create your plan mobile version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-tablet.png)
 
 ### Links
 
