@@ -17,6 +17,7 @@
     width: 528px;
     height: 80px;
     margin-top: 32px;
+    opacity: 0.8;
 }
 
 #homeReasons {
@@ -35,26 +36,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     text-align: center;
     background-color: var(--darkCyan);
     color: var(--lightCream);
     border-radius: 8px;
 }
 
-.reason p {
-    width: 255px;
-    height: 78px;
-    margin-top: 24px;
+.whyChooseUsIcon {
+    width: 72px;
+    height: 72px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .reasonContent {
     width: 255px;
-    height: 262px;
-    padding-top: 128px;
-    background-position: 50% 0%;
-    background-size: 72px;
-    background-repeat: no-repeat;
+    height: 134px;
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 56px;
+}
+
+.reasonContent p {
+    width: 255px;
+    height: 78px;
 }
 
 #coffeeBean-icon {
@@ -97,27 +107,28 @@
     .reason {
         width: 573px;
         height: 180px;
-        padding: 41px 0px 70px 0px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        padding: 0px 0px 0px 70px;
+        flex-direction: row;
+        text-align: left;
     }
 
-    .reason p {
-        width: 344px;
-        height: 50px;
-        margin-top: 16px;
+    .whyChooseUsIcon {
+        width: 56px;
+        height: 56px;
     }
 
     .reasonContent {
-        width: 455px;
+        width: 344px;
         height: 98px;
-        padding: 0px 0px 0px 111px;
-        text-align: left;
-        background-position: 0% 50%;
-        background-size: 55px;
-        margin-bottom: 0px;
+        margin-top: 0px;
+        align-items: flex-start;
+        margin: 0px 0px 0px 55px;
     }
+
+    .reasonContent p {
+        width: inherit;
+        height: 50px;
+    } 
 }
 
 /*############################## MOBILE VERSION ##############################*/
@@ -129,12 +140,6 @@
         flex-direction: column;
         margin-top: 120px;
         padding-top: 64px;
-    }
-
-    #homeWhyChooseUs p {
-        width: 279px;
-        height: 125px;
-        margin-top: 24px;
     }
 
     #homeReasons {
@@ -149,7 +154,9 @@
         height: 382px;
     }
 
-    .reasonContent {
-        margin-bottom: 48px;
+    .reasonContent p {
+        width: 279px;
+        height: 125px;
+        margin-top: 24px;
     }
 }

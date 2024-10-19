@@ -26,7 +26,7 @@ const HomeCollection: React.FC = () => {
                 <div id="picollo" className='variety'>
                     <div id="picolloPic" className='coffeePacketPic'></div>
                     <div id="picolloDesc" className='homeCoffeVariety'>
-                        <div className='homeCoffeeName'>Picollo</div>
+                        <div className='homeCoffeeName'>Piccollo</div>
                         <div className='homeDescription mainText'>Mild and smooth blend featuring notes of toasted almond and dried cherry.</div>
                     </div>
                 </div>

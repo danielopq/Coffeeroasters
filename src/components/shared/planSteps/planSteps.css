@@ -13,6 +13,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    opacity: 0.8;
 }
 
 .stepsCircle {
@@ -23,7 +24,7 @@
 }
 
 .stepsLine {
-    width: 349px;
+    width: 353px;
     height: 2px;
     background-color: var(--paleOrange);
 }

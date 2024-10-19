@@ -6,7 +6,7 @@
 #homeOurCollection {
     width: 1111px;
     height: 196px;
-    font: 900 150px/240px 'Fraunces-Black';
+    font: 900 150px/210px 'Fraunces-Black';
     text-align: center;
     color: var(--grey);
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
@@ -79,6 +79,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    opacity:0.7;
 }
 
 .homeCoffeeName {

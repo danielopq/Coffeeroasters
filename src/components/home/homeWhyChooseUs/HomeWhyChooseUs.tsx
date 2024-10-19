@@ -4,7 +4,7 @@ import './homeWhyChooseUs.css';
  * Functional component that renders the "Why choose us" section on the home page. 
  * @returns {JSX.Element} - The "Why choose us" section.
  */
-const HomeWhyChooseUs:React.FC = () => {
+const HomeWhyChooseUs: React.FC = () => {
     return (
         <>
             <div id="homeWhyChooseUs">
@@ -17,20 +17,23 @@ const HomeWhyChooseUs:React.FC = () => {
             </div>
             <div id="homeReasons">
                 <div className="reason">
-                    <div id="coffeeBean-icon" className="reasonContent">
+                    <div id="coffeeBean-icon" className='whyChooseUsIcon'></div>
+                    <div className="reasonContent">
                         <h4>Best quality</h4>
                         <p className="mainText">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
                     </div>
                 </div>
                 <div className="reason">
-                    <div id="gift-icon" className="reasonContent">
+                    <div id="gift-icon" className='whyChooseUsIcon'></div>
+                    <div className="reasonContent">
                         <h4>Exclusive benefits</h4>
                         <p className="mainText">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
                     </div>
                 </div>
                 <div className="reason">
-                    <div id="truck-icon" className="reasonContent">
-                        <h4>Free Shipping</h4>
+                    <div id="truck-icon" className='whyChooseUsIcon'></div>
+                    <div className="reasonContent">
+                        <h4>Free shipping</h4>
                         <p className="mainText">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
                     </div>
                 </div>
