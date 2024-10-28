@@ -32,10 +32,6 @@ footer>div {
     cursor: pointer;
 }
 
-#footerLinks button:hover {
-    color: var(--lightCream);
-}
-
 #footerSocialMedia {
     width: 120px;
     height: 24px;
@@ -55,25 +51,32 @@ footer>div {
     background-image: url(./img/icon-facebook.svg);
 }
 
-#facebook:hover {
-    background-image: url(./img/icon-facebook-hover.svg);
-}
-
 #twitter {
     background-image: url(./img/icon-twitter.svg);
-}
-
-#twitter:hover {
-    background-image: url(./img/icon-twitter-hover.svg);
 }
 
 #instagram {
     background-image: url(./img/icon-instagram.svg);
 }
 
-#instagram:hover {
-    background-image: url(./img/icon-instagram-hover.svg);
+@media(hover:hover) {
+    #footerLinks button:hover {
+        color: var(--lightCream);
+    }
+
+    #facebook:hover {
+        background-image: url(./img/icon-facebook-hover.svg);
+    }
+
+    #twitter:hover {
+        background-image: url(./img/icon-twitter-hover.svg);
+    }
+
+    #instagram:hover {
+        background-image: url(./img/icon-instagram-hover.svg);
+    }
 }
+
 
 /*############################## TABLET VERSION ##############################*/
 
