@@ -5,7 +5,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
