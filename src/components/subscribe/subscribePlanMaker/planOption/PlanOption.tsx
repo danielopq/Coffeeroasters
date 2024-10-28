@@ -43,15 +43,9 @@ const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blo
     const refOptionChoices = useRef<HTMLDivElement>(null);
     const [choicesVisibility, SetChoicesVisibility] = useState<boolean>(deployed);
 
-    useEffect(() => {
-        if (refOptionChoices.current) {
-            refOptionChoices.current.className = deployed ? 'optionChoices optionChoicesExtended' : 'optionChoices optionChoicesCollapsed';
-        }
-    }, []);
-
     //Determines if the option button should be blocked based on the "blocked" prop state.
     useEffect(() => {
-        SetChoicesVisibility(!blocked);
+        SetChoicesVisibility(blocked);
         if (blocked) {
             setSelectedChoice(null); // Reset selected choice if blocked
             if (refOptionChoices.current) {
@@ -67,6 +61,14 @@ const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blo
         }
     }, [blocked]);
 
+    useEffect(() => {
+        if (refOptionChoices.current) {
+            refOptionChoices.current.className = deployed ? 'optionChoices optionChoicesExtended' : 'optionChoices optionChoicesCollapsed';
+        }
+        if (refOptionButton.current) {
+            refOptionButton.current.className = choicesVisibility ? 'arrowUp' : 'arrowDown';
+        }
+    }, []);
 
     /**
      * Toggles the visibility of the choices and updates the button and choices styles.
@@ -97,7 +99,7 @@ const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blo
 
     return (
         <div className='option'>
-            <button ref={refOptionButton} onClick={displayChoices} aria-label={`Display opcion ${optionHeader}`}>{optionHeader}</button>
+            <button ref={refOptionButton} onClick={displayChoices} aria-label={optionHeader}>{optionHeader}</button>
             <div ref={refOptionChoices} className='optionChoices'>
                 <PlanChoice choiceProperties={choice01} selected={selectedChoice === 'choice01'} onClick={() => handleClick('choice01')} />
                 <PlanChoice choiceProperties={choice02} selected={selectedChoice === 'choice02'} onClick={() => handleClick('choice02')} />
