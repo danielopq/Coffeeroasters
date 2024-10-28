@@ -97,7 +97,7 @@ const PlanOption: React.FC<PlanOptionProps> = ({ optionID, option, deployed, blo
 
     return (
         <div className='option'>
-            <button ref={refOptionButton} onClick={displayChoices}>{optionHeader}</button>
+            <button ref={refOptionButton} onClick={displayChoices} aria-label={`Display opcion ${optionHeader}`}>{optionHeader}</button>
             <div ref={refOptionChoices} className='optionChoices'>
                 <PlanChoice choiceProperties={choice01} selected={selectedChoice === 'choice01'} onClick={() => handleClick('choice01')} />
                 <PlanChoice choiceProperties={choice02} selected={selectedChoice === 'choice02'} onClick={() => handleClick('choice02')} />

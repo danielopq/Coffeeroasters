@@ -36,16 +36,16 @@ const NavBar: React.FC = () => {
         <>
             <nav id="mainNavBar">
                 <div id="mainNavBarLinks">
-                    <button onClick={() => navigateTo('/')}>HOME</button>
-                    <button onClick={() => navigateTo('/aboutus')}>ABOUT US</button>
-                    <button onClick={() => navigateTo('/subscribe')}>CREATE YOUR PLAN</button>
+                    <button onClick={() => navigateTo('/')} aria-label="Home">HOME</button>
+                    <button onClick={() => navigateTo('/aboutus')} aria-label="About Us">ABOUT US</button>
+                    <button onClick={() => navigateTo('/subscribe')} aria-label="Create your plan">CREATE YOUR PLAN</button>
                 </div>
-                <button ref={refIcon} id="menuMobileIcon" className='showBurgerIcon' onClick={displayMobileMenu}></button>
+                <button ref={refIcon} id="menuMobileIcon" className='showBurgerIcon' onClick={displayMobileMenu} aria-label="Mobile menu"></button>
             </nav>
             <menu id="mobileMenu" className={mobileMenuVisible ? 'mobileMenuDisplayed' : 'mobileMenuHidden'}>
-                <button onClick={() => navigateTo('/')}>HOME</button>
-                <button onClick={() => navigateTo('/aboutus')}>ABOUT US</button>
-                <button onClick={() => navigateTo('/subscribe')}>CREATE YOUR PLAN</button>
+                <button onClick={() => navigateTo('/')} aria-label="Home">HOME</button>
+                <button onClick={() => navigateTo('/aboutus')} aria-label="About Us">ABOUT US</button>
+                <button onClick={() => navigateTo('/subscribe')} aria-label="Create your plan">CREATE YOUR PLAN</button>
             </menu>
         </>
 
