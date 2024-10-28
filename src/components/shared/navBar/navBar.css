@@ -26,11 +26,13 @@
     cursor: pointer;
 }
 
-#mainNavBarLinks button:hover {
-    color:var(--darkGrey);
+@media(hover:hover) {
+    #mainNavBarLinks button:hover {
+        color: var(--darkGrey);
+    }
 }
 
-#menuMobileIcon{
+#menuMobileIcon {
     width: 16px;
     height: inherit;
     float: right;
@@ -39,18 +41,18 @@
     background-position: center;
     background-repeat: no-repeat;
     display: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.showBurgerIcon{
+.showBurgerIcon {
     background-image: url('./img/icon-hamburger.svg');
 }
 
-.showCloseIcon{
+.showCloseIcon {
     background-image: url('./img/icon-close.svg');
 }
 
-#mobileMenu{
+#mobileMenu {
     width: 100vw;
     height: 100vh;
     margin-top: 90px;
@@ -63,21 +65,22 @@
     background: linear-gradient(to bottom, rgba(254, 252, 247, 1) 50%, rgba(254, 252, 247, 0.5) 100%);
 }
 
-.mobileMenuDisplayed{
+.mobileMenuDisplayed {
     display: flex;
 }
 
-.mobileMenuHidden{
+.mobileMenuHidden {
     display: none;
 }
 
-#mobileMenu button{
+#mobileMenu button {
     background-color: transparent;
     border: none;
     font: 900 24px/32px 'Fraunces-Black';
     margin-bottom: 32px;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -97,12 +100,12 @@
         margin: 32px 0px 0px 0px;
         background: url('./img/logo.svg') left/163px no-repeat;
     }
-    
+
     #mainNavBarLinks {
         display: none;
     }
 
-    #menuMobileIcon{
+    #menuMobileIcon {
         display: block;
     }
 }
