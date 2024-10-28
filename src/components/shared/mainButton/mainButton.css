@@ -7,15 +7,17 @@
     border: none;
 }
 
+.disabled{
+    background-color: var(--grey);
+}
+
 .enabled{
     background-color: var(--darkCyan);
     cursor: pointer;
 }
 
-.enabled:hover{
-    background-color: #66D2CF;
-}
-
-.disabled{
-    background-color: var(--grey);
+@media(hover:hover){
+    .enabled:hover{
+        background-color: #66D2CF;
+    }    
 }
