@@ -62,4 +62,5 @@ Key aspects of the process included:
 
 I am a focused and dedicated professional with a strong educational foundation and hands-on experience in programming and web development. My expertise in PHP, SQL, JavaScript, HTML, CSS, JAVA and other modern web technologies enables me to build engaging, efficient, and visually appealing websites that meet both user needs and business goals.
 
+- Personal website: [https://danielmartinez.co.uk]
 - linkedin - [www.linkedin.com/in/danielmartinezduque]
